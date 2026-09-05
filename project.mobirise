@@ -1829,7 +1829,8 @@
               "color": "#333336"
             },
             ".mbr-text": {
-              "color": "#333336"
+              "color": "#333336",
+              "text-align": "center"
             },
             ".mbr-soc": {
               "color": "#333336"
@@ -3927,7 +3928,8 @@
               "color": "#333336"
             },
             ".mbr-text": {
-              "color": "#333336"
+              "color": "#333336",
+              "text-align": "center"
             },
             ".mbr-soc": {
               "color": "#333336"
@@ -5391,7 +5393,8 @@
               "color": "#333336"
             },
             ".mbr-text": {
-              "color": "#333336"
+              "color": "#333336",
+              "text-align": "center"
             },
             ".mbr-soc": {
               "color": "#333336"
