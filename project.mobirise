@@ -1402,85 +1402,13 @@
           },
           "_name": "features04",
           "_sourceTheme": "flexm5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"features04 flexm5\" group=\"Features\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"12\" step=\"1\" value=\"2\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"12\" step=\"1\" value=\"2\" condition=\"fullScreen == false\">\n        <header>Cards</header>\n        <input type=\"checkbox\" title=\"Card Title\" name=\"showCardTitle\" checked>\n        <input type=\"checkbox\" title=\"Card Description\" name=\"showDesc\" checked>\n        <input type=\"color\" title=\"Card BG\" value=\"#272b2e\" name=\"card\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.webp\" selected parallax>\n            <input type=\"color\" title=\"Color\" value=\"#15171a\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@ADDONS_PATH@/flexm5/components/_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#F2F2F2\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row\">\n            <div class=\"col-12\">\n                <div class=\"items-wrapper\">\n                    <div class=\"item features-image\">\n                        <div class=\"item-wrapper\">\n                            <div class=\"item-content\">\n                                <div class=\"title-wrap\">\n                                    <h4 class=\"item-title mbr-fonts-style\" mbr-theme-style=\"display-2\" data-app-selector=\".item-title\" mbr-if=\"showCardTitle\"><b>The Developer Behind The Builds</b><b><br></b></h4>\n                                    <p class=\"item-desc mbr-fonts-style\" mbr-if=\"showDesc\" mbr-theme-style=\"display-7\" data-app-selector=\".item-desc\">I'm an independent AI consultant and software developer who builds practical, human-centered AI tools, agents, and automations for small businesses, organizations, and professionals. My background in digital communications, accessibility, and content operations helps me create solutions that are effective, inclusive, and grounded in real-world work.\n                                    <br><br>Learn More &gt;</p>\n                                </div>\n                            </div>\n                            <div class=\"item-img\">\n                                <img src=\"@PROJECT_PATH@/assets/images/e23881d4-690f-410b-9995-3c2adae70bcd-1254x1254.webp\" alt=\"Renée Leach\">\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"features04 flexm5\" group=\"Features\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"12\" step=\"1\" value=\"2\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"12\" step=\"1\" value=\"2\" condition=\"fullScreen == false\">\n        <header>Cards</header>\n        <input type=\"checkbox\" title=\"Card Title\" name=\"showCardTitle\" checked>\n        <input type=\"checkbox\" title=\"Card Description\" name=\"showDesc\" checked>\n        <input type=\"color\" title=\"Card BG\" value=\"#272b2e\" name=\"card\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.webp\" selected parallax>\n            <input type=\"color\" title=\"Color\" value=\"#15171a\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@ADDONS_PATH@/flexm5/components/_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#F2F2F2\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row\">\n            <div class=\"col-12\">\n                <div class=\"items-wrapper\">\n                    <div class=\"item features-image\">\n                        <div class=\"item-wrapper\">\n                            <div class=\"item-content\">\n                                <div class=\"title-wrap\">\n                                    <h4 class=\"item-title mbr-fonts-style\" mbr-theme-style=\"display-2\" data-app-selector=\".item-title\" mbr-if=\"showCardTitle\"><b>The Developer Behind The Builds</b><b><br></b></h4>\n                                    <p class=\"item-desc mbr-fonts-style\" mbr-if=\"showDesc\" mbr-theme-style=\"display-5\" data-app-selector=\".item-desc\"><b>Renée Leach<br>AI Enablement Consultant / Software Developer<br></b><br>I'm an independent AI consultant and software developer who builds practical, human-centered AI tools, agents, and automations for small businesses, organizations, and professionals. My background in digital communications, accessibility, and content operations helps me create solutions that are effective, inclusive, and grounded in real-world work.\n                                    <br><br>Learn More &gt;</p>\n                                </div>\n                            </div>\n                            <div class=\"item-img\">\n                                <img src=\"@PROJECT_PATH@/assets/images/e23881d4-690f-410b-9995-3c2adae70bcd-1254x1254.webp\" alt=\"Renée Leach\">\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "vyHqQvkyf4",
           "_anchor": "features04-1q",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
           "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "padding-top": "(@paddingTop * 1rem)",
-            "padding-bottom": "(@paddingBottom * 1rem)",
-            "overflow": "hidden",
-            "@min-height": "90px",
-            "@min-height-small": "@min-height / 2",
-            "& when (@bg-type = \"color\")": {
-              "background-color": "@bg-value"
-            },
-            "& when (@bg-type = \"image\")": {
-              "background-image": "url(@bg-value)",
-              "& when (@overlay)": {
-                ".mbr-overlay": {
-                  "background": "@overlayColor",
-                  "opacity": "@overlayOpacity"
-                }
-              }
-            },
-            ".item:focus, span:focus": {
-              "outline": "none"
-            },
-            ".container-fluid": {
-              "padding-left": "0",
-              "padding-right": "0",
-              "overflow": "visible"
-            },
-            ".item": {
-              "padding": "20px 0",
-              "min-height": "@min-height",
-              "@media (max-width: 768px)": {
-                "min-height": "@min-height-small"
-              }
-            },
-            ".content-wrap_1": {
-              "transform": "rotate(2deg)",
-              "background-color": "@contentBG_1"
-            },
-            ".content-wrap_2": {
-              "transform": "rotate(-2deg)",
-              "margin-top": "-3rem",
-              "background-color": "@contentBG_2",
-              "@media (max-width: 992px)": {
-                "margin-top": "-1rem"
-              }
-            },
-            ".container_1": {
-              "background-color": "@contentBG_1",
-              ".item_1": {
-                "color": "@contentColor_1",
-                "background-color": "@contentBG_1"
-              }
-            },
-            ".container_2": {
-              "background-color": "@contentBG_2",
-              ".item_2": {
-                "color": "@contentColor_2",
-                "background-color": "@contentBG_2"
-              }
-            }
-          },
-          "_name": "features03",
-          "_sourceTheme": "neuralm5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"features03 neuralm5\" group=\"Features\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"1\">\n        <header>Animated Text Settings</header>\n        <select title=\"Font style\" name=\"linesTitle\">\n            <option value=\"title1\" selected>Title 1</option>\n            <option value=\"title2\">Title 2</option>\n        </select>\n        <input type=\"text\" title=\"Line content 1 <br> (For the best experience, please write at least 100 characters)\" inline=\"\" name=\"animatedLine1\" value=\"// Human-centered AI Development // AI Tools // AI Agents // Automations // AI-based Software               // AI-based Software // Audio/Video // Content Developer\">\n        <select title=\"Direction 1\" name=\"direction1\">\n            <option value=\"-1\">Left</option>\n            <option value=\"1\" selected>Right</option>\n        </select>\n        <input type=\"color\" title=\"Content Color 1\" value=\"#121212\" name=\"contentColor_1\" selected>\n        <input type=\"color\" title=\"Content BG 1\" value=\"#c75423\" name=\"contentBG_1\" selected>\n        <input type=\"checkbox\" title=\"Line 2\" name=\"showLine2\" checked>\n        <input type=\"text\" title=\"Line content 2 <br> (For the best experience, please write at least 100 characters)\" inline=\"\" name=\"animatedLine2\" value=\"// Renée Leach // AI Enablement Consultant/Software Developer // Renée Leach               // AI Enablement Consultant/Software Developer // Renée Leach\" condition=\"showLine2\">\n        <select title=\"Direction 2\" name=\"direction2\" condition=\"showLine2\">\n            <option value=\"-1\" selected>Left</option>\n            <option value=\"1\">Right</option>\n        </select>\n        <input type=\"color\" title=\"Content Color 2\" value=\"#ffffff\" name=\"contentColor_2\" selected condition=\"showLine2\">\n        <input type=\"color\" title=\"Content BG 2\" value=\"#121212\" name=\"contentBG_2\" selected condition=\"showLine2\">\n        <input type=\"range\" inline title=\"Line speed\" name=\"speed\" min=\"0.01\" max=\"0.09\" step=\"0.01\" value=\"0.01\">\n        <header>Background</header>\n        <fieldset type=\"background\" parallax name=\"bg\" required>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.webp\" selected parallax>\n            <input type=\"color\" title=\"Color\" value=\"#121212\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#fff7ee\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div class=\"container-fluid\">\n\n        <div class=\"content-wrap_1\">\n            <div class=\"loop-container container_1\">\n                <div class=\"item item_1\" mbr-class=\"{'display-1':linesTitle=='title1','display-2':linesTitle=='title2'}\" data-linewords=\"{{animatedLine1}}\" data-direction=\"{{direction1}}\" data-speed=\"{{speed}}\"></div>\n                <div class=\"item item_1\" mbr-class=\"{'display-1':linesTitle=='title1','display-2':linesTitle=='title2'}\" data-linewords=\"{{animatedLine1}}\" data-direction=\"{{direction1}}\" data-speed=\"{{speed}}\"></div>\n            </div>\n        </div>\n\n        <div class=\"content-wrap_2\" mbr-if=\"showLine2\">\n            <div class=\"loop-container container_2\">\n                <div class=\"item item_2\" mbr-class=\"{'display-1':linesTitle=='title1','display-2':linesTitle=='title2'}\" data-linewords=\"{{animatedLine2}}\" data-direction=\"{{direction2}}\" data-speed=\"{{speed}}\"></div>\n                <div class=\"item item_2\" mbr-class=\"{'display-1':linesTitle=='title1','display-2':linesTitle=='title2'}\" data-linewords=\"{{animatedLine2}}\" data-direction=\"{{direction2}}\" data-speed=\"{{speed}}\"></div>\n            </div>\n        </div>\n\n    </div>\n</section>",
-          "_cid": "vyHuuCVRIb",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {},
-          "_anchor": "features03-1y"
         },
         {
           "alias": false,
