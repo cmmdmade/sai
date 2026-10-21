@@ -60,7 +60,7 @@
       }
     ],
     "imageResize": true,
-    "uniqCompNum": 59,
+    "uniqCompNum": 66,
     "versionPublish": "6.1.12",
     "screenshot": "screenshot.png",
     "publishChangesOnly": true,
@@ -1292,6 +1292,116 @@
           "_customHTML": "<section data-bs-version=\"5.1\" class=\"features05 fabm5\" group=\"Article\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"12\" step=\"1\" value=\"2\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"12\" step=\"1\" value=\"3\" condition=\"fullScreen == false\">\n        <header>Cards</header>\n        <input type=\"checkbox\" title=\"Card Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Card Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Card Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n        <input type=\"color\" title=\"Border Color\" value=\"#72716b\" name=\"border\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.webp\" selected parallax>\n            <input type=\"color\" title=\"Color\" value=\"#474A48\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1.webp\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row\">\n            \n            <div class=\"col-12 col-lg-6 item features-without-image item-mb active\">\n                <div class=\"item-wrapper\">\n                    <div class=\"card-box\">\n                        <div class=\"subtitle-wrap\">\n                            <h3 class=\"mbr-section-subtitle mbr-fonts-style\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\"><b>First Key Principle</b></h3>\n                        </div>\n                        <div class=\"content-wrapper\">\n                            <h2 class=\"mbr-section-title mbr-fonts-style\" data-app-selector=\".mbr-section-title, .mbr-section-btn\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">\n                                <b>People Before Platforms</b></h2>\n                            <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">AI should make work simplier, more accessible, and more effective. I design solutions around real people, real workflows, and real goals - with clarity, transparency, and practical results.</p>\n                            <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n                                <a class=\"btn btn-secondary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">\n                                    <span class=\"mobi-mbri mobi-mbri-right mbr-iconfont mbr-iconfont-btn\"></span>\n                                    READ MORE\n                                </a>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div><div class=\"col-12 col-lg-6 item features-without-image item-mb\">\n                <div class=\"item-wrapper\">\n                    <div class=\"card-box\">\n                        <div class=\"subtitle-wrap\">\n                            <h3 class=\"mbr-section-subtitle mbr-fonts-style\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\">\n                                <b>Second Key Principle</b>\n                            </h3>\n                        </div>\n                        <div class=\"content-wrapper\">\n                            <h2 class=\"mbr-section-title mbr-fonts-style\" data-app-selector=\".mbr-section-title, .mbr-section-btn\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">\n                                <b>Built for Real Work</b></h2>\n                            <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">\n                                Custom AI tools, automations, and systems that are reliable, secured, have continued support, and easy to use. No unnecessary complexity - just practical solutions that fit how you and your business work.</p>\n                            <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n                                <a class=\"btn btn-secondary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">\n                                    <span class=\"mobi-mbri mobi-mbri-right mbr-iconfont mbr-iconfont-btn\"></span>\n                                    READ MORE\n                                </a>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "tPfiw8mInr",
           "_anchor": "features05-6",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".item": {
+              "margin-bottom": "32px",
+              "@media (max-width: 992px)": {
+                "margin-bottom": "16px"
+              },
+              "&:nth-child(2n)": {
+                ".item-wrapper": {
+                  "flex-direction": "row-reverse",
+                  ".item-img": {
+                    "padding-left": "0",
+                    "padding-right": "32px",
+                    "@media (max-width: 992px)": {
+                      "padding-right": "0"
+                    }
+                  }
+                }
+              },
+              ".item-wrapper": {
+                "display": "flex",
+                "transition": "all 0.3s ease-in-out",
+                "@media (max-width: 992px)": {
+                  "display": "block"
+                },
+                ".item-content": {
+                  "display": "flex",
+                  "align-items": "flex-end",
+                  "background-color": "@card",
+                  "padding": "64px 40px",
+                  "width": "35%",
+                  "@media (max-width: 1200px)": {
+                    "padding": "64px 24px"
+                  },
+                  "@media (max-width: 992px)": {
+                    "width": "100%",
+                    "padding": "20px 16px",
+                    "margin-bottom": "16px"
+                  },
+                  ".title-wrap": {
+                    "width": "100%",
+                    ".item-title": {
+                      "margin-bottom": "24px"
+                    },
+                    ".item-desc": {
+                      "margin-bottom": "0"
+                    }
+                  }
+                },
+                ".item-img": {
+                  "width": "65%",
+                  "padding-left": "32px",
+                  "@media (max-width: 992px)": {
+                    "width": "100%",
+                    "padding-left": "0"
+                  },
+                  "img": {
+                    "height": "830px",
+                    "object-fit": "cover",
+                    "width": "100%",
+                    "@media (max-width: 992px)": {
+                      "height": "400px"
+                    }
+                  }
+                }
+              }
+            },
+            ".item-title": {
+              "color": "#ffffff"
+            },
+            ".item-desc": {
+              "color": "#ffffff"
+            }
+          },
+          "_name": "features04",
+          "_sourceTheme": "flexm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"features04 flexm5\" group=\"Features\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"12\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"12\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <header>Cards</header>\n        <input type=\"checkbox\" title=\"Card Title\" name=\"showCardTitle\" checked>\n        <input type=\"checkbox\" title=\"Card Description\" name=\"showDesc\" checked>\n        <input type=\"color\" title=\"Card BG\" value=\"#272b2e\" name=\"card\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.webp\" selected parallax>\n            <input type=\"color\" title=\"Color\" value=\"#15171a\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@ADDONS_PATH@/flexm5/components/_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#F2F2F2\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row\">\n            <div class=\"col-12\">\n                <div class=\"items-wrapper\">\n                    <div class=\"item features-image\">\n                        <div class=\"item-wrapper\">\n                            <div class=\"item-content\">\n                                <div class=\"title-wrap\">\n                                    <h4 class=\"item-title mbr-fonts-style\" mbr-theme-style=\"display-2\" data-app-selector=\".item-title\" mbr-if=\"showCardTitle\"><b>The Developer Behind The Builds</b><b><br></b></h4>\n                                    <p class=\"item-desc mbr-fonts-style\" mbr-if=\"showDesc\" mbr-theme-style=\"display-7\" data-app-selector=\".item-desc\">I'm an independent AI consultant and software developer who builds practical, human-centered AI tools, agents, and automations for small businesses, organizations, and professionals. My background in digital communications, accessibility, and content operations helps me create solutions that are effective, inclusive, and grounded in real-world work.\n                                    </p>\n                                </div>\n                            </div>\n                            <div class=\"item-img\">\n                                <img src=\"@PROJECT_PATH@/assets/images/e23881d4-690f-410b-9995-3c2adae70bcd-1254x1254.webp\" alt=\"Mobirise\">\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "vyHqQvkyf4",
+          "_anchor": "features04-1q",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
