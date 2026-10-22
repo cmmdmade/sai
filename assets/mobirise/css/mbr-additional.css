@@ -2427,7 +2427,7 @@ img {
   color: #FFFFFF !important;
 }
 .cid-vyqyfuGxr0 .featured-product-credit {
-  color: #CBCBCB !important;
+  color: #ffffff;
   font-size: clamp(0.95rem, 1.18vw, 1.3rem);
   line-height: 1.4;
   margin: 0 0 25px;
@@ -2714,7 +2714,7 @@ img {
   color: #c75423;
   background-position: center center;
   background-size: cover;
-  padding-top: 2rem;
+  padding-top: 0rem;
   padding-bottom: 3rem;
   background-image: url("../../../assets/images/background1.webp");
   width: 100%;
@@ -2855,7 +2855,7 @@ img {
   margin: 0;
   padding: 0;
   border: none;
-  color: #F9F6E0 !important;
+  color: #ffffff !important;
   font-size: clamp(0.95rem, 1.15vw, 1.18rem);
   font-weight: 600;
   line-height: 1.35;
@@ -3522,6 +3522,12 @@ img {
 }
 .cid-tPfiWrOGHA .mbr-section-title,
 .cid-tPfiWrOGHA .title-wrap {
+  color: #ffffff;
+}
+.cid-tPfiWrOGHA H3 {
+  color: #ffffff;
+}
+.cid-tPfiWrOGHA P {
   color: #ffffff;
 }
 .cid-vyrQ7FI95L {
