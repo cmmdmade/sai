@@ -2715,7 +2715,7 @@ img {
   background-position: center center;
   background-size: cover;
   padding-top: 2rem;
-  padding-bottom: 5rem;
+  padding-bottom: 3rem;
   background-image: url("../../../assets/images/background1.webp");
   width: 100%;
   max-width: 100%;
@@ -3965,7 +3965,7 @@ img {
   background-color: #161617;
   border-top: 1px solid #353535;
   border-bottom: 1px solid #353535;
-  color: #bcb9b4;
+  color: #d7d7d7;
   text-align: center;
   font-size: 0.85rem;
   line-height: 1.6;
@@ -4050,4 +4050,12 @@ img {
     padding: 20px 14px;
     font-size: 0.75rem;
   }
+}
+.cid-vyuTH9KVkF .mbr-desc,
+.cid-vyuTH9KVkF .desc-wrap {
+  color: #d7d7d7;
+}
+.cid-vyuTH9KVkF .mbr-text,
+.cid-vyuTH9KVkF .text-wrapper {
+  color: #d7d7d7;
 }
