@@ -64,7 +64,7 @@
     "uniqCompNum": 72,
     "versionPublish": "6.1.12",
     "screenshot": "screenshot.png",
-    "publishChangesOnly": true,
+    "publishChangesOnly": false,
     "usedWebp": true,
     "cssOptimize": true,
     "lazyLoad": true,
