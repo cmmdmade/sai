@@ -61,7 +61,7 @@
       }
     ],
     "imageResize": true,
-    "uniqCompNum": 101,
+    "uniqCompNum": 102,
     "versionPublish": "6.1.12",
     "screenshot": "screenshot.png",
     "publishChangesOnly": false,
@@ -3127,7 +3127,7 @@
           },
           "_name": "footer01",
           "_sourceTheme": "impactm5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"footer01 impactm5\" group=\"Footer\" global once=\"footers\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"12\" step=\"1\" value=\"3\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"12\" step=\"1\" value=\"2\">\n        <input type=\"checkbox\" title=\"Reverse\" name=\"reverseContent\">\n\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Logo\" name=\"showLogo\" checked>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Description\" name=\"showDesc\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n        <input type=\"checkbox\" title=\"Navigation\" name=\"showNav\" checked>\n        <input type=\"range\" inline title=\"Navigation Amount\" name=\"listAmount\" min=\"1\" max=\"3\" step=\"1\" value=\"2\" condition=\"showNav\">\n        <input type=\"color\" title=\"Marker Color\" value=\"#c75423\" name=\"markerColor\" condition=\"showNav\">\n        <input type=\"checkbox\" title=\"Arrow\" name=\"showArrow\" condition=\"showNav\">\n        <input type=\"checkbox\" title=\"Copyright\" name=\"showCopy\" checked>\n        <input type=\"color\" title=\"Copyright BG\" value=\"#161617\" name=\"cardBg\" condition=\"showCopy\">\n        <input type=\"color\" title=\"Border Color\" value=\"#353535\" name=\"cardBorder\" condition=\"showCopy\">\n\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#101012\" selected>\n        </fieldset>\n\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#101012\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n\n        <header>Neutral3rd Layout</header>\n        <input type=\"range\" inline title=\"Logo Width\" name=\"logoWidth\" min=\"180\" max=\"520\" step=\"10\" value=\"360\">\n        <input type=\"range\" inline title=\"Description Width %\" name=\"descWidth\" min=\"60\" max=\"100\" step=\"5\" value=\"60\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n\n        <div class=\"row justify-content-center n3-footer-main\" mbr-class=\"{'flex-row-reverse': reverseContent}\">\n\n            <div class=\"col-12 col-lg-7\" mbr-if=\"showLogo || showTitle || showSubtitle || showButtons || showText || showDesc\">\n\n                <div class=\"content-wrapper\">\n\n                    <div class=\"title-wrapper\" mbr-if=\"showLogo || showTitle\">\n                        <div class=\"title-wrap\">\n\n                            <div class=\"logo-wrapper\" mbr-if=\"showLogo\">\n                                <img class=\"n3-footer-logo\" src=\"@PROJECT_PATH@/assets/images/neutral3rd20emerging20technologies20logo-720x240.webp\" alt=\"Neutral3rd\">\n                            </div>\n\n                            <h2 class=\"mbr-section-title mbr-fonts-style\" data-app-selector=\".mbr-section-title, .title-wrapper, .mbr-section-btn\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\">\n                                <b>Neutral3rd</b>\n                            </h2>\n\n                        </div>\n                    </div>\n\n                    <div class=\"text-wrapper\" mbr-if=\"showText\">\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text, .text-wrapper\">\n                            Emerging Technologies Development Studio\n                        </p>\n                    </div>\n\n                    <div class=\"desc-wrapper\" mbr-if=\"showSubtitle || showDesc || showButtons\">\n\n                        <h3 class=\"mbr-section-subtitle mbr-fonts-style\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\">\n                            <b>ABOUT THE STUDIO</b>\n                        </h3>\n\n                        <div class=\"desc-wrap\" mbr-if=\"showDesc\">\n                            <p class=\"mbr-desc mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-desc, .desc-wrap\">\n                                Combining human insight and creativity with AI to build smarter workflows, intelligent systems, and AI-powered media. From strategy and enablement to implementation, assurance, image, audio and video production, Neutral3rd helps businesses and professionals turn AI possibilities into practical results. Working smarter, serving better, and growing with confidence.\n                            </p>\n                        </div>\n\n                        <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n                            <a class=\"btn btn-primary-outline\" href=\"mailto:renee.leach@neutral3rd.space?subject=Business%20Inquiry\">\n                                CONTACT NOW\n                            </a>\n                        </div>\n\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"col-12 col-lg-5\" mbr-if=\"showNav\">\n                <div class=\"navigation-wrap\">\n                    <div class=\"nav-wrapper\">\n\n                        <div class=\"nav-wrap\">\n                            <ul class=\"list mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".list, .item-wrap\" data-multiline mbr-article>\n                                <li class=\"item-wrap\"><b>PRIVACY</b></li>\n                                <li class=\"item-wrap\"><b>TERMS OF SERVICE</b></li>\n                                <li class=\"item-wrap\"><b>ACCESSIBILITY</b></li>\n                                <li class=\"item-wrap\"><b>SUPPORT</b></li>\n                            </ul>\n                        </div>\n\n                        <div class=\"nav-wrap\" mbr-if=\"listAmount > 1\">\n                            <ul class=\"list mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".list, .item-wrap\" data-multiline mbr-article>\n                                <li class=\"item-wrap\">\n                                    <b><a href=\"mailto:renee.leach@neutral3rd.space?subject=Business%20Inquiry\" class=\"text-primary\">EMAIL RENEE</a></b></li>\n                            </ul>\n                        </div>\n\n                        <div class=\"nav-wrap\" mbr-if=\"listAmount > 2\">\n                            <ul class=\"list mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".list, .item-wrap\" data-multiline mbr-article>\n                                <li class=\"item-wrap\"><b>YOUTUBE</b></li>\n                            </ul>\n                        </div>\n\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"col-12\">\n                <p class=\"mbr-copy mbr-fonts-style card-wrap\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-copy\" mbr-if=\"showCopy\">\n                    © 2026 Neutral3rd Emerging Technologies Development Studio. All Rights Reserved.\n                </p>\n            </div>\n\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"footer01 impactm5\" group=\"Footer\" global once=\"footers\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"12\" step=\"1\" value=\"3\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"12\" step=\"1\" value=\"3\">\n        <input type=\"checkbox\" title=\"Reverse\" name=\"reverseContent\">\n\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Logo\" name=\"showLogo\" checked>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Description\" name=\"showDesc\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n        <input type=\"checkbox\" title=\"Navigation\" name=\"showNav\" checked>\n        <input type=\"range\" inline title=\"Navigation Amount\" name=\"listAmount\" min=\"1\" max=\"3\" step=\"1\" value=\"2\" condition=\"showNav\">\n        <input type=\"color\" title=\"Marker Color\" value=\"#c75423\" name=\"markerColor\" condition=\"showNav\">\n        <input type=\"checkbox\" title=\"Arrow\" name=\"showArrow\" condition=\"showNav\">\n        <input type=\"checkbox\" title=\"Copyright\" name=\"showCopy\" checked>\n        <input type=\"color\" title=\"Copyright BG\" value=\"#161617\" name=\"cardBg\" condition=\"showCopy\">\n        <input type=\"color\" title=\"Border Color\" value=\"#353535\" name=\"cardBorder\" condition=\"showCopy\">\n\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#101012\" selected>\n        </fieldset>\n\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#101012\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n\n        <header>Neutral3rd Layout</header>\n        <input type=\"range\" inline title=\"Logo Width\" name=\"logoWidth\" min=\"180\" max=\"520\" step=\"10\" value=\"360\">\n        <input type=\"range\" inline title=\"Description Width %\" name=\"descWidth\" min=\"60\" max=\"100\" step=\"5\" value=\"60\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n\n        <div class=\"row justify-content-center n3-footer-main\" mbr-class=\"{'flex-row-reverse': reverseContent}\">\n\n            <div class=\"col-12 col-lg-7\" mbr-if=\"showLogo || showTitle || showSubtitle || showButtons || showText || showDesc\">\n\n                <div class=\"content-wrapper\">\n\n                    <div class=\"title-wrapper\" mbr-if=\"showLogo || showTitle\">\n                        <div class=\"title-wrap\">\n\n                            <div class=\"logo-wrapper\" mbr-if=\"showLogo\">\n                                <img class=\"n3-footer-logo\" src=\"@PROJECT_PATH@/assets/images/neutral3rd20emerging20technologies20logo-720x240.webp\" alt=\"Neutral3rd\">\n                            </div>\n\n                            <h2 class=\"mbr-section-title mbr-fonts-style\" data-app-selector=\".mbr-section-title, .title-wrapper, .mbr-section-btn\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\">\n                                <b>Neutral3rd</b>\n                            </h2>\n\n                        </div>\n                    </div>\n\n                    <div class=\"text-wrapper\" mbr-if=\"showText\">\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text, .text-wrapper\">\n                            Emerging Technologies Development Studio\n                        </p>\n                    </div>\n\n                    <div class=\"desc-wrapper\" mbr-if=\"showSubtitle || showDesc || showButtons\">\n\n                        <h3 class=\"mbr-section-subtitle mbr-fonts-style\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\">\n                            <b>ABOUT THE STUDIO</b>\n                        </h3>\n\n                        <div class=\"desc-wrap\" mbr-if=\"showDesc\">\n                            <p class=\"mbr-desc mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-desc, .desc-wrap\">\n                                Combining human insight and creativity with AI to build smarter workflows, intelligent systems, and AI-powered media. From strategy and enablement to implementation, assurance, image, audio and video production, Neutral3rd helps businesses and professionals turn AI possibilities into practical results. Working smarter, serving better, and growing with confidence.\n                            </p>\n                        </div>\n\n                        <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n                            <a class=\"btn btn-primary-outline\" href=\"mailto:renee.leach@neutral3rd.space?subject=Business%20Inquiry\">\n                                CONTACT NOW\n                            </a>\n                        </div>\n\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"col-12 col-lg-5\" mbr-if=\"showNav\">\n                <div class=\"navigation-wrap\">\n                    <div class=\"nav-wrapper\">\n\n                        <div class=\"nav-wrap\">\n                            <ul class=\"list mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".list, .item-wrap\" data-multiline mbr-article>\n                                <li class=\"item-wrap\"><b>PRIVACY</b></li>\n                                <li class=\"item-wrap\"><b>TERMS OF SERVICE</b></li>\n                                <li class=\"item-wrap\"><b>ACCESSIBILITY</b></li>\n                                <li class=\"item-wrap\"><b>SUPPORT</b></li>\n                            </ul>\n                        </div>\n\n                        <div class=\"nav-wrap\" mbr-if=\"listAmount > 1\">\n                            <ul class=\"list mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".list, .item-wrap\" data-multiline mbr-article>\n                                <li class=\"item-wrap\">\n                                    <b><a href=\"mailto:renee.leach@neutral3rd.space?subject=Business%20Inquiry\" class=\"text-primary\">EMAIL RENEE</a></b></li>\n                            </ul>\n                        </div>\n\n                        <div class=\"nav-wrap\" mbr-if=\"listAmount > 2\">\n                            <ul class=\"list mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".list, .item-wrap\" data-multiline mbr-article>\n                                <li class=\"item-wrap\"><b>YOUTUBE</b></li>\n                            </ul>\n                        </div>\n\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"col-12\">\n                <p class=\"mbr-copy mbr-fonts-style card-wrap\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-copy\" mbr-if=\"showCopy\">\n                    © 2026 Neutral3rd Emerging Technologies Development Studio. All Rights Reserved.\n                </p>\n            </div>\n\n        </div>\n    </div>\n</section>",
           "_cid": "vyuTH9KVkF",
           "_anchor": "footer01-1m",
           "_PHPplaceholders": [],
@@ -3136,157 +3136,6 @@
           "_global": true,
           "_once": "footers",
           "_params": {}
-        },
-        {
-          "_name": "features3",
-          "_sourceTheme": "boldm5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"features3 boldm5\" group=\"Features\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Reverse\" name=\"reverseContent\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Link\" name=\"showLink\">\n        <header>Cards</header>\n        <input type=\"color\" title=\"Active Color\" value=\"#ffffff\" name=\"active\" selected>\n        <input type=\"color\" title=\"Buttons Animation\" value=\"#ffffff\" name=\"buttonAni\">\n        <input type=\"color\" title=\"Buttons Color\" value=\"#000000\" name=\"buttonColor\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@ADDONS_PATH@/boldm5/components/_images/background1.jpg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#000000\" selected>\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@ADDONS_PATH@/boldm5/components/_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row\" mbr-class=\"{'flex-row-reverse' : reverseContent}\">\n            <div class=\"col-12 col-lg-2 item\">\n                <div class=\"title-wrapper\">\n                    <h2 class=\"mbr-section-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">\n                        Our website\n                    </h2>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">\n                        Affiliate</p>\n                    <a class=\"link-wrapper\" href=\"#\">\n                        <p class=\"mbr-link mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showLink\" data-app-selector=\".mbr-link\">\n                            mobi@rise.com\n                        </p>\n                    </a>\n                </div>\n            </div>\n            <div class=\"col-12 col-lg-2 col-md-6 item features-image\">\n                <div class=\"item-wrapper\">\n                    <img src=\"@PROJECT_PATH@/assets/images/image4.webp\" alt=\"Mobirise Website Builder\">\n                    <div class=\"item-content\">\n                        <div class=\"active-overlay\"></div>\n                        <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\">\n                            <a class=\"btn btn-secondary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">\n                                See card\n                            </a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"col-12 col-lg-2 col-md-6 item features-image\">\n                <div class=\"item-wrapper\">\n                    <img src=\"@PROJECT_PATH@/assets/images/image5.webp\" alt=\"Mobirise Website Builder\">\n                    <div class=\"item-content\">\n                        <div class=\"active-overlay\"></div>\n                        <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\"><a class=\"btn btn-secondary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">\n                                See card\n                            </a></div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"col-12 col-lg-2 col-md-6 item features-image\">\n                <div class=\"item-wrapper\">\n                    <img src=\"@PROJECT_PATH@/assets/images/image8.webp\" alt=\"Mobirise Website Builder\">\n                    <div class=\"item-content\">\n                        <div class=\"active-overlay\"></div>\n                        <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\">\n                            <a class=\"btn btn-secondary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">\n                                See card\n                            </a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"col-12 col-lg-2 col-md-6 item features-image\">\n                <div class=\"item-wrapper\">\n                    <img src=\"@PROJECT_PATH@/assets/images/image12.webp\" alt=\"Mobirise Website Builder\">\n                    <div class=\"item-content\">\n                        <div class=\"active-overlay\"></div>\n                        <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\">\n                            <a class=\"btn btn-secondary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">\n                                See card\n                            </a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"col-12 col-lg-2 col-md-6 item features-image\">\n                <div class=\"item-wrapper\">\n                    <img src=\"@PROJECT_PATH@/assets/images/image15.webp\" alt=\"Mobirise Website Builder\">\n                    <div class=\"item-content\">\n                        <div class=\"active-overlay\"></div>\n                        <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\">\n                            <a class=\"btn btn-secondary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">\n                                See card\n                            </a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_styles": {
-            "& when not (@fullScreen)": {
-              "padding-top": "(@paddingTop * 1rem)",
-              "padding-bottom": "(@paddingBottom * 1rem)"
-            },
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            ".mbr-fallback-image.disabled": {
-              "display": "none"
-            },
-            ".mbr-fallback-image": {
-              "display": "block",
-              "background-size": "cover",
-              "background-position": "center center",
-              "width": "100%",
-              "height": "100%",
-              "position": "absolute",
-              "top": "0",
-              "& when (@bg-type = 'video')": {
-                "background-image": "url(@fallBackImage)"
-              }
-            },
-            "& when (@fullWidth)": {
-              ".container-fluid": {
-                "margin": "0",
-                "padding": "0 66px",
-                "@media (max-width: 992px)": {
-                  "padding": "0 25px"
-                },
-                ".row": {
-                  "padding": "0"
-                }
-              }
-            },
-            "& when not (@fullWidth)": {
-              "@media (max-width: 992px)": {
-                ".row": {
-                  "padding": "0 13px"
-                }
-              }
-            },
-            ".row": {
-              "justify-content": "center"
-            },
-            ".item": {
-              "position": "relative",
-              "padding": "10px",
-              "@media (max-width: 992px)": {
-                "margin-bottom": "20px"
-              },
-              ".title-wrapper": {
-                ".mbr-section-title": {
-                  "margin-bottom": "18px"
-                },
-                ".mbr-text": {
-                  "margin-bottom": "0"
-                },
-                ".link-wrapper": {
-                  "display": "block",
-                  "&:hover": {
-                    ".mbr-link": {
-                      "color": "@active"
-                    }
-                  },
-                  ".mbr-link": {
-                    "margin-bottom": "0",
-                    "transition": "all 0.3s ease-out"
-                  }
-                }
-              },
-              "img": {
-                "position": "absolute",
-                "width": "100%",
-                "height": "100%",
-                "object-fit": "cover"
-              },
-              ".item-wrapper": {
-                "position": "relative",
-                "display": "flex",
-                "flex-direction": "column",
-                "justify-content": "flex-end",
-                "height": "260px",
-                "&:hover": {
-                  ".item-content .active-overlay": {
-                    "opacity": ".75"
-                  },
-                  ".item-content .mbr-section-btn": {
-                    "transform": "translateY(0)",
-                    "opacity": "1"
-                  }
-                },
-                ".item-content": {
-                  "padding": "10px",
-                  "z-index": "1",
-                  "position": "relative",
-                  "height": "50%",
-                  "display": "flex",
-                  "justify-content": "center",
-                  "pointer-events": "none",
-                  ".active-overlay": {
-                    "position": "absolute",
-                    "top": "0",
-                    "left": "0",
-                    "width": "100%",
-                    "height": "100%",
-                    "background-image": "linear-gradient(0deg, @active 0, rgba(255, 255, 255, 0) 100%)",
-                    "background-size": "200% 100%",
-                    "opacity": "0",
-                    "transition": "all 0.3s ease-out",
-                    "pointer-events": "none"
-                  },
-                  ".mbr-section-btn": {
-                    "position": "absolute",
-                    "top": "-2rem",
-                    "transform": "translateY(50%)",
-                    "transition": "all 0.3s ease-out",
-                    "opacity": "0",
-                    "pointer-events": "auto",
-                    ".btn": {
-                      "background-image": "linear-gradient(99deg, rgba(255, 255, 255, 0) 30%, @buttonAni 100%), radial-gradient(circle at 50% 50%, @buttonAni 0, rgba(255, 255, 255, 0) 70%)",
-                      "color": "@buttonColor !important"
-                    }
-                  }
-                }
-              }
-            },
-            ".mbr-section-title": {
-              "color": "#ffffff"
-            },
-            ".mbr-text": {
-              "color": "#b6b6b6"
-            },
-            ".mbr-link": {
-              "color": "#b6b6b6"
-            }
-          },
-          "_cid": "vyP6t80neA",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {},
-          "_anchor": "features3-2p"
         }
       ]
     }
