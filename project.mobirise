@@ -3372,7 +3372,7 @@
     },
     "privacy.html": {
       "settings": {
-        "title": "Neutral3rd Emerging Technologies Development Studio | Privacy",
+        "title": "Privacy Policy | Neutral3rd Emerging Technologies Development Studio",
         "meta_descr": "Learn how Neutral3rd collects, uses, protects, and manages personal information across its website, AI-powered solutions, digital products, and services.",
         "header_custom": "",
         "footer_custom": "<style>\n/* Neutral3rd: Basic Image Protection */\nimg {\n  -webkit-user-drag: none;\n  user-drag: none;\n  -webkit-touch-callout: none;\n}\n</style>\n\n<script>\n(function () {\n  \"use strict\";\n\n  // Prevent the image-specific right-click menu.\n  document.addEventListener(\"contextmenu\", function (event) {\n    if (event.target.closest(\"img, picture\")) {\n      event.preventDefault();\n    }\n  });\n\n  // Prevent dragging images onto the desktop.\n  document.addEventListener(\"dragstart\", function (event) {\n    if (event.target.closest(\"img, picture\")) {\n      event.preventDefault();\n    }\n  });\n})();\n</script>",
@@ -4383,7 +4383,7 @@
     },
     "terms.html": {
       "settings": {
-        "title": "Neutral 3rd Emerging Technologies Development Studio | Terms",
+        "title": "Terms of Service | Neutral 3rd Emerging Technologies Development Studio",
         "meta_descr": "Review Neutral3rd's Terms of Service covering website use, AI solutions, consulting, digital products, payments, intellectual property, and client responsibilities.",
         "header_custom": "",
         "footer_custom": "<style>\n/* Neutral3rd: Basic Image Protection */\nimg {\n  -webkit-user-drag: none;\n  user-drag: none;\n  -webkit-touch-callout: none;\n}\n</style>\n\n<script>\n(function () {\n  \"use strict\";\n\n  // Prevent the image-specific right-click menu.\n  document.addEventListener(\"contextmenu\", function (event) {\n    if (event.target.closest(\"img, picture\")) {\n      event.preventDefault();\n    }\n  });\n\n  // Prevent dragging images onto the desktop.\n  document.addEventListener(\"dragstart\", function (event) {\n    if (event.target.closest(\"img, picture\")) {\n      event.preventDefault();\n    }\n  });\n})();\n</script>",
@@ -5394,7 +5394,7 @@
     },
     "accessibility.html": {
       "settings": {
-        "title": "Neutral 3rd Emerging Technologies Development Studio | Accessibility",
+        "title": "Accessibility | Neutral 3rd Emerging Technologies Development Studio",
         "meta_descr": "Explore Neutral3rd's commitment to digital accessibility, inclusive design, WCAG 2.2 Level AA goals, assistive technology support, and continuous improvement.",
         "header_custom": "",
         "footer_custom": "<style>\n/* Neutral3rd: Basic Image Protection */\nimg {\n  -webkit-user-drag: none;\n  user-drag: none;\n  -webkit-touch-callout: none;\n}\n</style>\n\n<script>\n(function () {\n  \"use strict\";\n\n  // Prevent the image-specific right-click menu.\n  document.addEventListener(\"contextmenu\", function (event) {\n    if (event.target.closest(\"img, picture\")) {\n      event.preventDefault();\n    }\n  });\n\n  // Prevent dragging images onto the desktop.\n  document.addEventListener(\"dragstart\", function (event) {\n    if (event.target.closest(\"img, picture\")) {\n      event.preventDefault();\n    }\n  });\n})();\n</script>",
