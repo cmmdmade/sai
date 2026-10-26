@@ -1952,7 +1952,7 @@ img {
   min-width: 0;
 }
 .cid-vyqf49IxUR .benefit-title {
-  color: #F9F6E0;
+  color: #fff;
   margin-bottom: 6px;
   line-height: 1.25;
 }
@@ -4751,7 +4751,7 @@ img {
 }
 @media (min-width: 992px) {
   .cid-vyZtqaroJI .navbar.collapsed.opened:not(.navbar-short) .navbar-collapse {
-    max-height: calc(98.5vh - 8rem);
+    max-height: calc(98.5vh - 7.3rem);
   }
 }
 .cid-vyZtqaroJI .navbar.collapsed .dropdown-menu .dropdown-submenu {
@@ -5609,7 +5609,7 @@ img {
 }
 @media (min-width: 992px) {
   .cid-vz05MEQnSh .navbar.collapsed.opened:not(.navbar-short) .navbar-collapse {
-    max-height: calc(98.5vh - 8rem);
+    max-height: calc(98.5vh - 7.3rem);
   }
 }
 .cid-vz05MEQnSh .navbar.collapsed .dropdown-menu .dropdown-submenu {
