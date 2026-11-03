@@ -63,7 +63,7 @@
       }
     ],
     "imageResize": true,
-    "uniqCompNum": 164,
+    "uniqCompNum": 165,
     "versionPublish": "6.1.12",
     "screenshot": "screenshot.png",
     "publishChangesOnly": true,
@@ -1341,21 +1341,65 @@
           "_params": {}
         },
         {
-          "_customTemplate": true,
-          "_afterNavbarItem": false,
-          "_customHTML": "<!-- Type valid HTML here -->\n<div data-socialjuice=\"carousel\" data-space=\"2042\" data-slug=\"neutral3rd\" data-id=\"928\" data-title=\"Slider widget\" style=\"min-height:330px\"></div>\n[JS_CODE_0]\n<p>Testimonials</p>",
-          "_customCSS": "/* Type valid CSS here */\n\ndiv {\n  padding: 60px 0;\n  color: #fff;\n  background-color: #121212;\n  text-align: center;\n}\np {\n  font-size: 60px;\n  color: #fff;\n}",
-          "alias": "code-editor",
-          "_tags": [
-            "Extension"
-          ],
-          "_name": "pro.custom-html",
-          "_sourceTheme": "fabm5",
-          "_anchor": "custom-html-4j",
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".title-wrapper": {
+              "margin-bottom": "60px",
+              "@media (max-width: 992px)": {
+                "margin-bottom": "40px"
+              },
+              ".mbr-label": {
+                "margin-bottom": "15px"
+              },
+              ".mbr-section-title": {
+                "margin-bottom": "0"
+              }
+            },
+            ".mbr-label": {
+              "color": "#ffffff",
+              "text-align": "center"
+            },
+            ".mbr-section-title": {
+              "color": "#ffffff",
+              "text-align": "center"
+            }
+          },
+          "_name": "video01",
+          "_sourceTheme": "wonderm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"video01 wonderm5\" group=\"Image & Video\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"12\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"12\" step=\"1\" value=\"5\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Label\" name=\"showLabel\" checked>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@ADDONS_PATH@/wonderm5/components/_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#1d1d1d\" selected>\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@ADDONS_PATH@/wonderm5/components/_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-12 col-lg-7\">\n                <div class=\"title-wrapper\" mbr-if=\"showTitle || showLabel\">\n                    <p class=\"mbr-label mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showLabel\" data-app-selector=\".mbr-label\">\n                        PRODUCT SHOWCASE\n                    </p>\n                    <h2 class=\"mbr-section-title mbr-fonts-style\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">\n                        Beauty Products Transform Everyday Skincare\n                    </h2>\n                </div>\n                <!--  <div mbr-video class=\"mbr-figure\">\n                    <iframe src=\"https://www.youtube.com/watch?v=lQ9c9RYHc1I&loop=1&autoplay=1\"></iframe>\n                </div> -->\n<div data-socialjuice=\"carousel\" data-space=\"2042\" data-slug=\"neutral3rd\" data-id=\"928\" data-title=\"Slider widget\" style=\"min-height:330px\"></div>\n[JS_CODE_0]\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "vzW7QPVll1",
+          "_anchor": "video01-4k",
           "_PHPplaceholders": [],
           "_JSplaceholders": [
             "<script src=\"https://embed.socialjuice.io/js/embed.js\" async></script>"
-          ]
+          ],
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
         },
         {
           "alias": false,
