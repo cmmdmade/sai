@@ -1342,7 +1342,7 @@
         {
           "_customTemplate": true,
           "_afterNavbarItem": false,
-          "_customHTML": "<!-- Type valid HTML here -->\n\n<div data-socialjuice=\"wall\" data-space=\"2042\" data-slug=\"tsm\" data-id=\"939\" data-title=\"Wall of love widget\" style=\"min-height:575px\"></div>\n[JS_CODE_0]",
+          "_customHTML": "<!-- Type valid HTML here -->\n\n[JS_CODE_0]\n<iframe id=\"socialjuice-wall-2042-939\" src=\"https://embed.socialjuice.io/wall/2042?s=tsm&amp;id=939&amp;custom=true\" title=\"Wall of love widget\" allowfullscreen=\"\" allowtransparency=\"true\" frameborder=\"0\" scrolling=\"no\" width=\"100%\" height=\"575px\"></iframe>\n[JS_CODE_1]",
           "_customCSS": "/* Type valid CSS here */\n\ndiv {\n  padding: 80px 0;\n  color: #2b2b2b;\n  text-align: center;\n}\np {\n  font-size: 60px;\n  color: #777;\n}",
           "alias": "code-editor",
           "_tags": [
@@ -1353,7 +1353,8 @@
           "_anchor": "custom-html-4j",
           "_PHPplaceholders": [],
           "_JSplaceholders": [
-            "<script src=\"https://embed.socialjuice.io/js/embed.js\" async></script>"
+            "<script src=\"https://embed.socialjuice.io/js/iframeResizer.min.js\"></script>",
+            "<script>iFrameResize({log: false, checkOrigin: false}, \"#socialjuice-wall-2042-939\");</script>"
           ]
         },
         {
