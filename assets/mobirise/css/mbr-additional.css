@@ -1862,7 +1862,8 @@ img {
 }
 #custom-html-4j div {
   padding: 80px 0;
-  color: #2b2b2b;
+  color: #fff;
+  background-color: #2b2b2b;
   text-align: center;
 }
 #custom-html-4j p {

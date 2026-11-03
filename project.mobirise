@@ -1342,8 +1342,8 @@
         {
           "_customTemplate": true,
           "_afterNavbarItem": false,
-          "_customHTML": "<!-- Type valid HTML here -->\n\n<iframe id=\"socialjuice-carousel-2042-928\" src=\"https://embed.socialjuice.io/carousel/2042?s=neutral3rd&amp;id=928&amp;custom=true\" title=\"Slider widget\" allowfullscreen=\"\" allowtransparency=\"true\" frameborder=\"0\" scrolling=\"no\" width=\"100%\" height=\"380px\"></iframe>",
-          "_customCSS": "/* Type valid CSS here */\n\ndiv {\n  padding: 80px 0;\n  color: #2b2b2b;\n  text-align: center;\n}\np {\n  font-size: 60px;\n  color: #777;\n}",
+          "_customHTML": "<!-- Type valid HTML here -->\n<div data-socialjuice=\"carousel\" data-space=\"2042\" data-slug=\"neutral3rd\" data-id=\"928\" data-title=\"Slider widget\" style=\"min-height:380px\"></div>\n[JS_CODE_0]",
+          "_customCSS": "/* Type valid CSS here */\n\ndiv {\n  padding: 80px 0;\n  color: #fff;\nbackground-color: #2b2b2b;\n  text-align: center;\n}\np {\n  font-size: 60px;\n  color: #777;\n}",
           "alias": "code-editor",
           "_tags": [
             "Extension"
@@ -1352,7 +1352,9 @@
           "_sourceTheme": "fabm5",
           "_anchor": "custom-html-4j",
           "_PHPplaceholders": [],
-          "_JSplaceholders": []
+          "_JSplaceholders": [
+            "<script src=\"https://embed.socialjuice.io/js/embed.js\" async></script>"
+          ]
         },
         {
           "alias": false,
