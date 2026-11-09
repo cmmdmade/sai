@@ -72,9 +72,9 @@
     "lazyLoad": true,
     "favicon": "@PROJECT_PATH@/assets/images/white20and20orange20n320logo-128x128.png",
     "mbrsiteDomain": "j4ipwgntcu",
-    "robotsSwitcher": false,
+    "robotsSwitcher": true,
     "sitemapSwitcher": false,
-    "sitemapSwitcherAuto": false,
+    "sitemapSwitcherAuto": "on",
     "siteUrl": false,
     "cookiesAlert": false,
     "gdpr": false,
@@ -84,7 +84,8 @@
       "name": "Neutral3rd Emerging Technologies Development Studio",
       "icon": "@PROJECT_PATH@/assets/images/bold20n320geometric20logo-512x512.png",
       "themeColor": "#f9f6e0"
-    }
+    },
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\n"
   },
   "pages": {
     "index.html": {
