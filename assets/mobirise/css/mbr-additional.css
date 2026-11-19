@@ -7408,6 +7408,7 @@ img {
 #custom-html-5e {
   /* Neutral3rd Fast Good Cheap: scoped Mobirise module styles */
   /* Tradeoffs and indicative pricing */
+  /* Mobirise 6.1.12 form layout correction: 3 fields across, project details across entire next row. */
 }
 #custom-html-5e #n3-fgc {
   --n3-bg: #202426;
@@ -7791,6 +7792,42 @@ img {
 }
 #custom-html-5e #n3-fgc .n3-card[hidden] {
   display: none !important;
+}
+#custom-html-5e #n3-fgc #n3-fgc-form .n3-fields {
+  display: grid!important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 15px!important;
+  align-items: start!important;
+}
+#custom-html-5e #n3-fgc #n3-fgc-form .n3-fields > .n3-field {
+  grid-column: auto!important;
+  min-width: 0!important;
+  width: 100%!important;
+  max-width: none!important;
+}
+#custom-html-5e #n3-fgc #n3-fgc-form .n3-fields > .n3-details-full {
+  grid-column: -1 !important;
+  grid-row: 2!important;
+  display: flex!important;
+  flex-direction: column!important;
+  width: 100%!important;
+}
+#custom-html-5e #n3-fgc #n3-fgc-form .n3-details-full textarea {
+  display: block!important;
+  width: 100%!important;
+  max-width: none!important;
+  min-width: 0!important;
+  min-height: 150px!important;
+  resize: vertical;
+}
+@media (max-width: 700px) {
+  #custom-html-5e #n3-fgc #n3-fgc-form .n3-fields {
+    grid-template-columns: 1fr!important;
+  }
+  #custom-html-5e #n3-fgc #n3-fgc-form .n3-fields > .n3-details-full {
+    grid-column: 1!important;
+    grid-row: auto!important;
+  }
 }
 .cid-vA8TDuKXjP {
   padding-top: 3rem;
