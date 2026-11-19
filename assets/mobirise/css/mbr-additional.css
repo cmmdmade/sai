@@ -7776,6 +7776,22 @@ img {
     min-height: 0;
   }
 }
+#custom-html-5e #n3-fgc .n3-consent {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 12px 0 18px;
+  font-size: 13px;
+  color: #e8e9e9;
+}
+#custom-html-5e #n3-fgc .n3-consent input {
+  width: 18px;
+  height: 18px;
+  flex: 0 0 18px;
+}
+#custom-html-5e #n3-fgc .n3-card[hidden] {
+  display: none !important;
+}
 .cid-vA8TDuKXjP {
   padding-top: 3rem;
   padding-bottom: 3rem;
