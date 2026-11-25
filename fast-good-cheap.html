@@ -23,626 +23,11 @@
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
   <link rel="preload" href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,200,300,400,500,600,700,100i,200i,300i,400i,500i,600i,700i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,200,300,400,500,600,700,100i,200i,300i,400i,500i,600i,700i&display=swap"></noscript>
-  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=1kDMz2"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=1kDMz2" type="text/css">
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=0BzO2e"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=0BzO2e" type="text/css">
 
   
   
   <meta name="robots" content="noindex, nofollow">
-
-
-<!-- Neutral3rd Fast. Good. Cheap. page styles.
-     Paste into Page Settings > Code Editor > Inside <head>.
-     Leave the block CSS tab empty: Mobirise saves only part of it.
--->
-<style>
-/* ============================================================
-   Neutral3rd - Fast. Good. Cheap.
-   Scoped styles for the #n3-fgc block, written in Mobirise's own
-   conventions: mbr-section, container, the Bootstrap row and column
-   grid, mbr-section-title, mbr-section-subtitle, mbr-fonts-style,
-   btn and form-control.
-   Paste into the site CSS, replacing the old #n3-fgc block, including the
-   rules the old block scoped as #custom-html-5e #n3-fgc.
-   Every rule starts with #n3-fgc, so nothing here can reach the rest
-   of the Mobirise site. The panel compiles through Less, so this file
-   avoids calc() arithmetic on CSS variables; values are written out.
-   ============================================================ */
-
-#n3-fgc {
-  --n3-bg: #202426;
-  --n3-panel: #292e31;
-  --n3-line: #485055;
-  --n3-orange: #c75423;
-  --n3-white: #f8f8f6;
-  --n3-muted: #c3c8ca;
-  background:
-    radial-gradient(ellipse at 85% 4%, rgba(199, 84, 35, 0.17), transparent 38%),
-    repeating-linear-gradient(120deg, transparent 0 80px, rgba(255, 255, 255, 0.018) 81px 82px),
-    var(--n3-bg);
-  color: var(--n3-white);
-  padding: 80px 0;
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.55;
-  isolation: isolate;
-}
-
-#n3-fgc * { box-sizing: border-box; }
-
-/* One content measure at every breakpoint, on the Mobirise container. */
-#n3-fgc .container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-/* The theme's type scale and button spacing are neutralised inside the
-   block so the approved design keeps its own type and rhythm. */
-#n3-fgc .mbr-fonts-style { font-family: inherit; }
-#n3-fgc .mbr-section-btn { margin: 0; font-size: inherit; }
-#n3-fgc .btn { margin: 0; }
-
-/* The site forces square, light buttons inside .mbr-section-btn. */
-#n3-fgc .mbr-section-btn .btn {
-  border-radius: 5px !important;
-  font-weight: 700 !important;
-}
-#n3-fgc .mbr-section-btn .btn:hover,
-#n3-fgc .mbr-section-btn .btn:focus { transform: none; }
-
-/* The site CSS forces pill inputs and a monospace face on .form-control
-   with !important, so the block restores its own input shape. */
-#n3-fgc .form-control {
-  height: auto;
-  line-height: inherit;
-  border-radius: 5px !important;
-}
-#n3-fgc textarea.form-control { line-height: inherit !important; }
-#n3-fgc .form-control:hover,
-#n3-fgc .form-control:focus {
-  border-color: #b8bfc2 !important;
-  box-shadow: none;
-}
-
-/* ------------------------------------------------ typography --- */
-
-#n3-fgc .n3-eyebrow {
-  color: #ee9b73;
-  letter-spacing: .19em;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: inherit;
-  text-transform: uppercase;
-}
-
-#n3-fgc h1 {
-  font-size: clamp(44px, 7vw, 90px);
-  line-height: 1.04;
-  letter-spacing: -0.05em;
-  margin: 12px 0;
-}
-
-#n3-fgc h2 {
-  font-size: clamp(26px, 4vw, 42px);
-  line-height: 1.15;
-  margin: 0 0 12px;
-}
-
-#n3-fgc h3 {
-  font-size: 21px;
-  line-height: 1.25;
-  margin: 0 0 12px;
-}
-
-#n3-fgc p { margin: 0 0 15px; }
-
-#n3-fgc .n3-accent { color: #e37e4d; }
-
-#n3-fgc .n3-muted { color: var(--n3-muted); }
-
-#n3-fgc .n3-muted a,
-#n3-fgc .n3-legal a {
-  color: #ffb28e;
-  text-decoration: underline;
-}
-
-#n3-fgc .n3-intro {
-  font-size: 19px;
-  max-width: 740px;
-  color: var(--n3-muted);
-}
-
-/* ------------------------------------------------------ hero --- */
-
-#n3-fgc .n3-hero {
-  padding: 20px 0 55px;
-  border-bottom: 1px solid var(--n3-line);
-  position: relative;
-}
-
-#n3-fgc .n3-hero:after {
-  content: '';
-  position: absolute;
-  right: 1%;
-  top: 3%;
-  width: 240px;
-  height: 240px;
-  border: 1px solid rgba(199, 84, 35, 0.28);
-  border-radius: 50%;
-  box-shadow: 0 0 0 28px rgba(199, 84, 35, 0.035), 0 0 0 70px rgba(199, 84, 35, 0.025);
-  pointer-events: none;
-}
-
-#n3-fgc .n3-hero > * { position: relative; z-index: 1; }
-
-#n3-fgc .n3-pills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 9px;
-  margin: 26px 0;
-}
-
-#n3-fgc .n3-pill {
-  border: 1px solid #6c7376;
-  padding: 8px 12px;
-  border-radius: 40px;
-  font-size: 13px;
-  color: #e8e9e9;
-}
-
-/* --------------------------------------------------- buttons --- */
-
-#n3-fgc .n3-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 44px;
-  background: var(--n3-orange);
-  color: #fff !important;
-  border: 1px solid var(--n3-orange);
-  border-radius: 5px;
-  padding: 11px 18px;
-  text-decoration: none;
-  cursor: pointer;
-  font: inherit;
-  font-weight: 700;
-}
-
-#n3-fgc .n3-btn:hover,
-#n3-fgc .n3-btn:focus-visible { background: #e16a35; }
-
-#n3-fgc .n3-btn[disabled] { opacity: .6; cursor: default; }
-
-#n3-fgc .n3-btn-outline {
-  background: transparent;
-  border-color: #9b9fa1;
-}
-
-/* -------------------------------------------------- sections --- */
-
-#n3-fgc .n3-section { padding: 48px 0 0; }
-
-#n3-fgc #n3-fgc-how,
-#n3-fgc #n3-fgc-catalog,
-#n3-fgc #n3-fgc-request { scroll-margin-top: 96px; }
-
-/* ------------------------------- Mobirise row and column grid --- */
-
-/* Mobirise compiles this panel with Less, which fails on calc() arithmetic
-   applied to a CSS variable. Each gutter is written out as a plain value. */
-
-#n3-fgc .row {
-  margin-left: -9px;
-  margin-right: -9px;
-  margin-bottom: -18px;
-}
-
-#n3-fgc .row > [class*="col-"] {
-  min-width: 0;
-  padding-left: 9px;
-  padding-right: 9px;
-  margin-bottom: 18px;
-}
-
-#n3-fgc .row.n3-principles {
-  margin-top: 24px;
-  margin-left: -7.5px;
-  margin-right: -7.5px;
-  margin-bottom: -15px;
-}
-
-#n3-fgc .row.n3-principles > [class*="col-"] {
-  padding-left: 7.5px;
-  padding-right: 7.5px;
-  margin-bottom: 15px;
-}
-
-#n3-fgc .row.n3-form-grid {
-  align-items: flex-start;
-  margin-left: -7.5px;
-  margin-right: -7.5px;
-  margin-bottom: -15px;
-}
-
-#n3-fgc .row.n3-form-grid > [class*="col-"] {
-  padding-left: 7.5px;
-  padding-right: 7.5px;
-  margin-bottom: 15px;
-}
-
-#n3-fgc .row.n3-tiers {
-  margin-top: 4px;
-  margin-left: -4px;
-  margin-right: -4px;
-  margin-bottom: -8px;
-}
-
-#n3-fgc .row.n3-tiers > [class*="col-"] {
-  padding-left: 4px;
-  padding-right: 4px;
-  margin-bottom: 8px;
-}
-
-/* ----------------------------------------------- principles --- */
-
-#n3-fgc .n3-principle {
-  height: 100%;
-  background: rgba(255, 255, 255, 0.035);
-  border: 1px solid var(--n3-line);
-  padding: 22px;
-  border-radius: 10px;
-}
-
-#n3-fgc .n3-principle strong {
-  display: block;
-  font-size: 18px;
-  margin-bottom: 6px;
-}
-
-#n3-fgc .n3-principle p {
-  font-size: 14px;
-  line-height: 1.7;
-  margin: 0;
-}
-
-#n3-fgc .n3-principle p b { color: #f9f9f7; }
-
-#n3-fgc .n3-tradeoff {
-  display: inline-block;
-  font-size: 11px;
-  font-weight: 800;
-  letter-spacing: .13em;
-  color: #ffae87;
-  margin: 0 0 12px;
-  border-bottom: 1px solid rgba(255, 174, 135, 0.5);
-  padding-bottom: 5px;
-}
-
-/* --------------------------------------------------- catalog --- */
-
-#n3-fgc .n3-toolbar {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  align-items: center;
-  margin: 24px 0;
-}
-
-#n3-fgc input,
-#n3-fgc select,
-#n3-fgc textarea {
-  background: #fff;
-  color: #202426;
-  border: 1px solid #b8bfc2;
-  border-radius: 5px;
-  padding: 12px;
-  font: inherit;
-  max-width: 100%;
-}
-
-#n3-fgc input::placeholder,
-#n3-fgc textarea::placeholder {
-  color: #596266;
-  opacity: 1;
-}
-
-#n3-fgc .n3-toolbar input { flex: 2 1 230px; }
-#n3-fgc .n3-toolbar select { flex: 1 1 220px; }
-
-#n3-fgc .n3-count { color: var(--n3-muted); font-size: 13px; }
-
-#n3-fgc .n3-card {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  background: var(--n3-panel);
-  border: 1px solid var(--n3-line);
-  border-radius: 12px;
-  padding: 23px;
-  min-width: 0;
-}
-
-#n3-fgc .n3-card[hidden] { display: none !important; }
-
-#n3-fgc .n3-tag {
-  color: #ed9a73;
-  font-size: 11px;
-  letter-spacing: .1em;
-  text-transform: uppercase;
-  font-weight: 700;
-  margin-bottom: 14px;
-}
-
-#n3-fgc .n3-card p { color: var(--n3-muted); font-size: 14px; }
-
-#n3-fgc .n3-deliverable {
-  font-size: 13px;
-  padding: 13px 0;
-  border-top: 1px solid var(--n3-line);
-  border-bottom: 1px solid var(--n3-line);
-  margin: 7px 0 17px;
-}
-
-#n3-fgc .n3-deliverable b { color: #fff; }
-
-#n3-fgc .n3-choices {
-  display: grid;
-  gap: 8px;
-  margin-top: auto;
-}
-
-#n3-fgc .n3-choice {
-  width: 100%;
-  text-align: left;
-  border: 1px solid #62696d;
-  border-radius: 7px;
-  background: #303639;
-  color: #fff;
-  padding: 10px 12px;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  gap: 8px;
-  align-items: center;
-  font: inherit;
-  font-size: 13px;
-}
-
-#n3-fgc .n3-choice[aria-pressed="true"] {
-  border-color: #ee8957;
-  background: #48352c;
-  box-shadow: inset 3px 0 0 #ee8957;
-}
-
-#n3-fgc .n3-choice span {
-  font-size: 12px;
-  font-weight: 700;
-}
-
-#n3-fgc .n3-choice strong {
-  font-size: 16px;
-  letter-spacing: -0.02em;
-  white-space: nowrap;
-}
-
-#n3-fgc .n3-detail {
-  min-height: 148px;
-  margin-top: 14px;
-  font-size: 13px;
-  color: #d6dadc;
-}
-
-#n3-fgc .n3-detail b { color: #fff; }
-
-#n3-fgc .n3-tradeoff-line {
-  color: #ffb28e;
-  font-weight: 700;
-  margin: 7px 0 9px;
-  line-height: 1.45;
-}
-
-#n3-fgc .n3-included { color: #d5d9da; line-height: 1.5; }
-
-#n3-fgc .n3-card .n3-btn {
-  width: 100%;
-  font-size: 14px;
-}
-
-#n3-fgc .n3-footnote {
-  font-size: 13px;
-  color: var(--n3-muted);
-  margin-top: 17px;
-}
-
-/* ---------------------------------------------- intake form --- */
-
-#n3-fgc .n3-intake {
-  border: 1px solid #6b5550;
-  background: linear-gradient(135deg, #2d3032, #302923);
-  border-radius: 12px;
-  padding: 28px;
-  margin-top: 30px;
-}
-
-#n3-fgc .n3-form-field {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  font-size: 14px;
-  font-weight: 400;
-  min-width: 0;
-}
-
-#n3-fgc .n3-form-field > label {
-  font-weight: 700;
-}
-
-#n3-fgc .n3-form-field input,
-#n3-fgc .n3-form-field select,
-#n3-fgc .n3-form-field textarea {
-  width: 100%;
-  font-weight: 400;
-}
-
-#n3-fgc .n3-hint {
-  font-weight: 400;
-  font-size: 12px;
-  color: var(--n3-muted);
-}
-
-#n3-fgc .n3-form-details textarea {
-  min-height: 175px;
-  resize: vertical;
-}
-
-#n3-fgc .n3-tier-group {
-  border: 0;
-  padding: 0;
-  margin: 0;
-  min-width: 0;
-}
-
-#n3-fgc .n3-tier-group legend {
-  font-size: 14px;
-  font-weight: 700;
-  padding: 0;
-  margin-bottom: 5px;
-}
-
-#n3-fgc .n3-tier-group .n3-hint {
-  margin: 0 0 8px;
-}
-
-#n3-fgc .n3-radio {
-  position: relative;
-  display: block;
-  cursor: pointer;
-}
-
-#n3-fgc .n3-radio input {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  opacity: 0;
-  pointer-events: none;
-}
-
-#n3-fgc .n3-radio-body {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  gap: 4px;
-  border: 1px solid #62696d;
-  border-radius: 7px;
-  background: #303639;
-  padding: 10px 12px;
-  font-size: 12px;
-  font-weight: 700;
-}
-
-#n3-fgc .n3-radio-body strong {
-  font-size: 16px;
-  letter-spacing: -0.02em;
-}
-
-#n3-fgc .n3-radio-note {
-  font-size: 11px;
-  font-weight: 400;
-  color: #d5d9da;
-}
-
-#n3-fgc .n3-radio input:checked + .n3-radio-body {
-  border-color: #ee8957;
-  background: #48352c;
-  box-shadow: inset 3px 0 0 #ee8957;
-}
-
-#n3-fgc .n3-radio input:focus-visible + .n3-radio-body {
-  outline: 3px solid #ffb58d;
-  outline-offset: 3px;
-}
-
-#n3-fgc .n3-form-consent {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  margin: 18px 0;
-  font-size: 13px;
-  color: #e8e9e9;
-  font-weight: 400;
-}
-
-#n3-fgc .n3-form-consent input {
-  width: 18px;
-  height: 18px;
-  flex: 0 0 18px;
-  margin-top: 2px;
-  padding: 0;
-  accent-color: var(--n3-orange);
-}
-
-#n3-fgc .n3-legal {
-  font-size: 12px;
-  color: var(--n3-muted);
-}
-
-#n3-fgc .n3-status {
-  min-height: 1.4em;
-  margin: 14px 0 0;
-  font-size: 14px;
-  color: #d6dadc;
-}
-
-#n3-fgc .n3-status[data-state="error"] { color: #ffb4a2; }
-
-#n3-fgc .n3-hp {
-  position: absolute;
-  left: -9999px;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-}
-
-/* -------------------------------------------------- feedback --- */
-
-#n3-fgc :focus-visible {
-  outline: 3px solid #ffb58d;
-  outline-offset: 3px;
-}
-
-#n3-fgc [hidden] { display: none !important; }
-
-/* ------------------------------------------------- responsive --- */
-
-@media (max-width: 991px) {
-  #n3-fgc .n3-grid > [class*="col-"] { flex: 0 0 50%; width: 50%; max-width: 50%; }
-  #n3-fgc .n3-principles > [class*="col-"],
-  #n3-fgc .n3-form-grid > [class*="col-"]:not(.n3-form-wide),
-  #n3-fgc .n3-tiers > [class*="col-"] { flex: 0 0 33.333333%; width: 33.333333%; max-width: 33.333333%; }
-}
-
-/* The design keeps three cards across until 960, where Bootstrap's own
-   column breakpoint would already have dropped to one. */
-@media (min-width: 961px) and (max-width: 991px) {
-  #n3-fgc .n3-grid > [class*="col-"] { flex: 0 0 33.333333%; width: 33.333333%; max-width: 33.333333%; }
-}
-
-@media (max-width: 700px) {
-  #n3-fgc .n3-form-grid > [class*="col-"]:not(.n3-form-wide),
-  #n3-fgc .n3-tiers > [class*="col-"] { flex: 0 0 100%; width: 100%; max-width: 100%; }
-}
-
-@media (max-width: 640px) {
-  #n3-fgc { padding: 48px 0; }
-  #n3-fgc .container { padding: 0 16px; }
-  #n3-fgc .n3-grid > [class*="col-"],
-  #n3-fgc .n3-principles > [class*="col-"] { flex: 0 0 100%; width: 100%; max-width: 100%; }
-  #n3-fgc .n3-hero:after { opacity: .3; width: 150px; height: 150px; }
-  #n3-fgc .n3-intake { padding: 19px; }
-  #n3-fgc .n3-detail { min-height: 0; }
-}
-
-</style>
 
 <meta name="theme-color" content="#f9f6e0">
 <link rel="manifest" href="manifest.json">
@@ -687,7 +72,7 @@
                 </div>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-info text-primary display-4" href="https://offerbeacon.neutral3rd.space" target="_blank">OfferBeacon Suite</a></li><li class="nav-item"><a class="nav-link link text-info text-primary display-4" href="https://neutral3rd.space/custom-task-prompt">From My Wildest Dreams</a></li>
+                <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-info text-primary display-4" href="https://offerbeacon.neutral3rd.space" target="_blank">OfferBeacon Suite</a></li><li class="nav-item"><a class="nav-link link text-info text-primary display-4" href="https://offerbeacon.neutral3rd.space/fast-good-cheap">Fast | Good | Cheap</a></li><li class="nav-item"><a class="nav-link link text-info text-primary display-4" href="https://neutral3rd.space/custom-task-prompt">From My Wildest Dreams</a></li>
                     
                     <li class="nav-item"><a class="nav-link link text-info text-primary display-4" href="index.html#dev-about">About</a>
                     </li></ul>
@@ -698,47 +83,27 @@
     </nav>
 </section>
 
-<div id="custom-html-5e"><section id="n3-fgc" class="mbr-section" aria-label="Neutral3rd one-off digital services">
- <div class="container">
-
+<div id="custom-html-5e"><section id="n3-fgc" aria-label="Neutral3rd one-off digital services">
+ <div class="n3-wrap">
   <header class="n3-hero">
-   <div class="n3-eyebrow mbr-section-subtitle mbr-fonts-style">Neutral3rd / One-off digital services</div>
-   <h1 class="mbr-section-title mbr-fonts-style display-2">FAST. GOOD.<br><span class="n3-accent">CHEAP.</span></h1>
-   <h2 class="mbr-section-subtitle mbr-fonts-style display-5">Pick two. Get it done.</h2>
-   <p class="n3-intro mbr-fonts-style">Clear deliverables. Transparent options. Human-reviewed curriculum, presentations, scripts and business documents, developed with ChatGPT or Claude. No subscription required.</p>
+   <div class="n3-eyebrow">Neutral3rd / One-off digital services</div>
+   <h1>FAST. GOOD.<br><span class="n3-accent">CHEAP.</span></h1>
+   <h2>Pick two. Get it done.</h2>
+   <p class="n3-intro">Clear deliverables. Transparent options. Human-reviewed curriculum, presentations, scripts and business documents, developed with ChatGPT or Claude. No subscription required.</p>
    <div class="n3-pills"><span class="n3-pill">One-time projects</span><span class="n3-pill">Choose your tradeoff</span><span class="n3-pill">Human-led, AI-powered</span></div>
-   <div class="mbr-section-btn"><a class="n3-btn btn display-4" href="#n3-fgc-catalog">Explore services</a></div>
+   <a class="n3-btn" href="#n3-fgc-catalog">Explore services</a>
   </header>
-
-  <div class="n3-section" id="n3-fgc-how">
-   <div class="n3-eyebrow mbr-section-subtitle mbr-fonts-style">How it works</div>
-   <h2 class="mbr-section-subtitle mbr-fonts-style display-5">Pick two. Understand the tradeoff.</h2>
-   <p class="n3-muted mbr-fonts-style">The classic rule is simple: you can prioritize two, but the third gives way. Every delivered item must still be accurate, usable and reviewed. “Not good” means less polish and depth, never careless or defective work.</p>
-   <div class="n3-principles row">
-    <div class="col-12 col-lg-4"><div class="n3-principle"><strong>FAST + GOOD</strong><span class="n3-tradeoff">NOT CHEAP</span><p class="mbr-fonts-style"><strong>Benefit:</strong> priority scheduling, full scope and deeper refinement.<br><strong>Tradeoff:</strong> premium price for reserved production capacity.</p></div></div>
-    <div class="col-12 col-lg-4"><div class="n3-principle"><strong>GOOD + CHEAP</strong><span class="n3-tradeoff">NOT FAST</span><p class="mbr-fonts-style"><strong>Benefit:</strong> full scope and thoughtful refinement at a lower starting price.<br><strong>Tradeoff:</strong> flexible scheduling; 3–14 business days estimated.</p></div></div>
-    <div class="col-12 col-lg-4"><div class="n3-principle"><strong>CHEAP + FAST</strong><span class="n3-tradeoff">NOT FULL-SERVICE GOOD</span><p class="mbr-fonts-style"><strong>Benefit:</strong> a quick, affordable starting point.<br><strong>Tradeoff:</strong> limited depth, templated structure, minimal customization and no extensive revision cycle. Still fact-checked and usable.</p></div></div>
-   </div>
+  <div class="n3-section" id="n3-fgc-how"><div class="n3-eyebrow">How it works</div><h2>Pick two. Understand the tradeoff.</h2><p class="n3-muted">The classic rule is simple: you can prioritize two, but the third gives way. Every delivered item must still be accurate, usable and reviewed. “Not good” means less polish and depth, never careless or defective work.</p>
+   <div class="n3-principles"><div class="n3-principle"><strong>FAST + GOOD</strong><span class="n3-tradeoff">NOT CHEAP</span><p><strong>Benefit:</strong> priority scheduling, full scope and deeper refinement.<br><strong>Tradeoff:</strong> premium price for reserved production capacity.</p></div><div class="n3-principle"><strong>GOOD + CHEAP</strong><span class="n3-tradeoff">NOT FAST</span><p><strong>Benefit:</strong> full scope and thoughtful refinement at a lower starting price.<br><strong>Tradeoff:</strong> flexible scheduling; 3–14 business days estimated.</p></div><div class="n3-principle"><strong>CHEAP + FAST</strong><span class="n3-tradeoff">NOT FULL-SERVICE GOOD</span><p><strong>Benefit:</strong> a quick, affordable starting point.<br><strong>Tradeoff:</strong> limited depth, templated structure, minimal customization and no extensive revision cycle. Still fact-checked and usable.</p></div></div>
   </div>
-
-  <div class="n3-section" id="n3-fgc-catalog">
-   <div class="n3-eyebrow mbr-section-subtitle mbr-fonts-style">Browse the studio</div>
-   <h2 class="mbr-section-subtitle mbr-fonts-style display-5">Choose the job you need finished.</h2>
-   <p class="n3-muted mbr-fonts-style">Select a service and compare its three options. Text-first packages use ChatGPT or Claude with human review; no AI video or image generation is included. Every price is a starting estimate, not a fixed quote. Client readiness, supplied materials, complexity and the agreed start date affect the final price and completion date.</p>
-
-   <div class="n3-toolbar">
-    <input id="n3-fgc-search" type="search" placeholder="Search services or deliverables" aria-label="Search services">
-    <select id="n3-fgc-category" aria-label="Filter by category"><option value="all">All categories</option></select>
-    <span class="n3-count" id="n3-fgc-count" aria-live="polite">12 services</span>
-   </div>
-
-   <div class="n3-grid row" id="n3-fgc-grid">
-
-<div class="n3-card-col col-12 col-lg-4">
-<article class="n3-card" data-service="course" data-fgc-service="course-curriculum-blueprint" data-full="Up to 8 modules, lesson objectives, exercises, resource list and one revision" data-lite="4-module roadmap, core objectives and suggested lesson titles" data-category="Courses &amp; Coaching" data-search="course curriculum blueprint turn your expertise into a teachable, sequenced program with clear learning outcomes. 4–8 module curriculum map, lesson outcomes and assessment plan">
-<div class="n3-tag mbr-fonts-style">Courses &amp; Coaching</div>
-<h3 class="mbr-section-title mbr-fonts-style display-5">Course Curriculum Blueprint</h3>
-<p class="mbr-fonts-style">Turn your expertise into a teachable, sequenced program with clear learning outcomes.</p>
+  <div class="n3-section" id="n3-fgc-catalog"><div class="n3-eyebrow">Browse the studio</div><h2>Choose the job you need finished.</h2><p class="n3-muted">Select a service and compare its three options. Text-first packages use ChatGPT or Claude with human review; no AI video or image generation is included. Every price is a starting estimate, not a fixed quote. Client readiness, supplied materials, complexity and the agreed start date affect the final price and completion date.</p>
+   <div class="n3-toolbar"><input id="n3-fgc-search" type="search" placeholder="Search services or deliverables" aria-label="Search services"><select id="n3-fgc-category" aria-label="Filter by category"><option value="all">All categories</option><option value="Client Work &amp; Proposals">Client Work &amp; Proposals</option><option value="Courses &amp; Coaching">Courses &amp; Coaching</option><option value="Digital Products &amp; PLR">Digital Products &amp; PLR</option><option value="Email Marketing">Email Marketing</option><option value="Personal Brand &amp; Portfolio">Personal Brand &amp; Portfolio</option><option value="Product Photography &amp; Ads">Product Photography &amp; Ads</option><option value="VSL &amp; Sales Videos">VSL &amp; Sales Videos</option><option value="Webinars &amp; Live Events">Webinars &amp; Live Events</option><option value="YouTube">YouTube</option></select><span class="n3-count" id="n3-fgc-count" aria-live="polite">12 services</span></div>
+   <div class="n3-grid" id="n3-fgc-grid">
+<!-- Internal workflow reference: AKA Course Outline | SuperPlug ID: custom:6ad3018e9114358da0f9776b -->
+<article class="n3-card" data-service="course" data-superplug-name="Course Outline" data-superplug-id="custom:6ad3018e9114358da0f9776b" data-full="Up to 8 modules, lesson objectives, exercises, resource list and one revision" data-lite="4-module roadmap, core objectives and suggested lesson titles" data-category="Courses &amp; Coaching" data-search="course curriculum blueprint turn your expertise into a teachable, sequenced program with clear learning outcomes. 4–8 module curriculum map, lesson outcomes and assessment plan">
+<div class="n3-tag">Courses &amp; Coaching</div>
+<h3>Course Curriculum Blueprint</h3>
+<p>Turn your expertise into a teachable, sequenced program with clear learning outcomes.</p>
 <div class="n3-deliverable"><strong>Deliverable: </strong>4–8 module curriculum map, lesson outcomes and assessment plan</div>
 <div class="n3-choices" role="group" aria-label="Choose your tradeoff">
 <button type="button" class="n3-choice" data-tier="fg" aria-pressed="false"><span>FAST + GOOD</span><strong>From $539</strong></button>
@@ -746,15 +111,13 @@
 <button type="button" class="n3-choice" data-tier="fc" aria-pressed="false"><span>CHEAP + FAST</span><strong>From $199</strong></button>
 </div>
 <div class="n3-detail"><b class="n3-days">3–14 business days (estimated)</b><div class="n3-tradeoff-line">NOT FAST · Full scope, thoughtful refinement and flexible scheduling.</div><div class="n3-included">Included: Up to 8 modules, lesson objectives, exercises, resource list and one revision</div></div>
-<button class="n3-btn n3-request btn display-4" type="button">Request this service</button>
+<button class="n3-btn n3-request" type="button">Request this service</button>
 </article>
-</div>
-
-<div class="n3-card-col col-12 col-lg-4">
-<article class="n3-card" data-service="slides" data-fgc-service="lesson-slide-content-kit" data-full="Up to 25 slides of copy, speaker notes, examples and two quiz questions; no rendered slide design" data-lite="12-slide outline with key talking points; no visual design" data-category="Courses &amp; Coaching" data-search="lesson slide content kit give one training lesson a structured, engaging teaching narrative. 12–25 slide content outline with speaker notes and knowledge checks">
-<div class="n3-tag mbr-fonts-style">Courses &amp; Coaching</div>
-<h3 class="mbr-section-title mbr-fonts-style display-5">Lesson Slide Content Kit</h3>
-<p class="mbr-fonts-style">Give one training lesson a structured, engaging teaching narrative.</p>
+<!-- Internal workflow reference: AKA Lesson Slides | SuperPlug ID: custom:6ad0f66b436094a1ae5196b4 -->
+<article class="n3-card" data-service="slides" data-superplug-name="Lesson Slides" data-superplug-id="custom:6ad0f66b436094a1ae5196b4" data-full="Up to 25 slides of copy, speaker notes, examples and two quiz questions; no rendered slide design" data-lite="12-slide outline with key talking points; no visual design" data-category="Courses &amp; Coaching" data-search="lesson slide content kit give one training lesson a structured, engaging teaching narrative. 12–25 slide content outline with speaker notes and knowledge checks">
+<div class="n3-tag">Courses &amp; Coaching</div>
+<h3>Lesson Slide Content Kit</h3>
+<p>Give one training lesson a structured, engaging teaching narrative.</p>
 <div class="n3-deliverable"><strong>Deliverable: </strong>12–25 slide content outline with speaker notes and knowledge checks</div>
 <div class="n3-choices" role="group" aria-label="Choose your tradeoff">
 <button type="button" class="n3-choice" data-tier="fg" aria-pressed="false"><span>FAST + GOOD</span><strong>From $349</strong></button>
@@ -762,15 +125,13 @@
 <button type="button" class="n3-choice" data-tier="fc" aria-pressed="false"><span>CHEAP + FAST</span><strong>From $129</strong></button>
 </div>
 <div class="n3-detail"><b class="n3-days">3–14 business days (estimated)</b><div class="n3-tradeoff-line">NOT FAST · Full scope, thoughtful refinement and flexible scheduling.</div><div class="n3-included">Included: Up to 25 slides of copy, speaker notes, examples and two quiz questions; no rendered slide design</div></div>
-<button class="n3-btn n3-request btn display-4" type="button">Request this service</button>
+<button class="n3-btn n3-request" type="button">Request this service</button>
 </article>
-</div>
-
-<div class="n3-card-col col-12 col-lg-4">
-<article class="n3-card" data-service="webinar" data-fgc-service="webinar-presentation-script" data-full="Up to 40 slide-by-slide scripts, transitions, Q&amp;A prompts and one revision" data-lite="15-slide presentation outline with key messages" data-category="Webinars &amp; Live Events" data-search="webinar presentation script build a persuasive webinar narrative without purchasing a full production package. 30–40 slide narrative, speaker notes and q&amp;a prompts">
-<div class="n3-tag mbr-fonts-style">Webinars &amp; Live Events</div>
-<h3 class="mbr-section-title mbr-fonts-style display-5">Webinar Presentation Script</h3>
-<p class="mbr-fonts-style">Build a persuasive webinar narrative without purchasing a full production package.</p>
+<!-- Internal workflow reference: AKA Webinar Slide Deck | SuperPlug ID: custom:6ad0f65d346373b5243fab28 -->
+<article class="n3-card" data-service="webinar" data-superplug-name="Webinar Slide Deck" data-superplug-id="custom:6ad0f65d346373b5243fab28" data-full="Up to 40 slide-by-slide scripts, transitions, Q&amp;A prompts and one revision" data-lite="15-slide presentation outline with key messages" data-category="Webinars &amp; Live Events" data-search="webinar presentation script build a persuasive webinar narrative without purchasing a full production package. 30–40 slide narrative, speaker notes and q&amp;a prompts">
+<div class="n3-tag">Webinars &amp; Live Events</div>
+<h3>Webinar Presentation Script</h3>
+<p>Build a persuasive webinar narrative without purchasing a full production package.</p>
 <div class="n3-deliverable"><strong>Deliverable: </strong>30–40 slide narrative, speaker notes and Q&amp;A prompts</div>
 <div class="n3-choices" role="group" aria-label="Choose your tradeoff">
 <button type="button" class="n3-choice" data-tier="fg" aria-pressed="false"><span>FAST + GOOD</span><strong>From $619</strong></button>
@@ -778,15 +139,13 @@
 <button type="button" class="n3-choice" data-tier="fc" aria-pressed="false"><span>CHEAP + FAST</span><strong>From $229</strong></button>
 </div>
 <div class="n3-detail"><b class="n3-days">3–14 business days (estimated)</b><div class="n3-tradeoff-line">NOT FAST · Full scope, thoughtful refinement and flexible scheduling.</div><div class="n3-included">Included: Up to 40 slide-by-slide scripts, transitions, Q&amp;A prompts and one revision</div></div>
-<button class="n3-btn n3-request btn display-4" type="button">Request this service</button>
+<button class="n3-btn n3-request" type="button">Request this service</button>
 </article>
-</div>
-
-<div class="n3-card-col col-12 col-lg-4">
-<article class="n3-card" data-service="youtube" data-fgc-service="youtube-script-discovery-kit" data-full="One 8–12 minute script, 3 titles, description, chapters and one revision; no thumbnail or video" data-lite="One 4-minute script outline, 2 titles and short description" data-category="YouTube" data-search="youtube script &amp; discovery kit plan a stronger video with an audience-focused hook and searchable metadata. one ready-to-film script, titles, description and chapters">
-<div class="n3-tag mbr-fonts-style">YouTube</div>
-<h3 class="mbr-section-title mbr-fonts-style display-5">YouTube Script &amp; Discovery Kit</h3>
-<p class="mbr-fonts-style">Plan a stronger video with an audience-focused hook and searchable metadata.</p>
+<!-- Internal workflow reference: AKA Video Script + SEO | SuperPlug ID: custom:6ad0f65d3e18349f99f24eec -->
+<article class="n3-card" data-service="youtube" data-superplug-name="Video Script + SEO" data-superplug-id="custom:6ad0f65d3e18349f99f24eec" data-full="One 8–12 minute script, 3 titles, description, chapters and one revision; no thumbnail or video" data-lite="One 4-minute script outline, 2 titles and short description" data-category="YouTube" data-search="youtube script &amp; discovery kit plan a stronger video with an audience-focused hook and searchable metadata. one ready-to-film script, titles, description and chapters">
+<div class="n3-tag">YouTube</div>
+<h3>YouTube Script &amp; Discovery Kit</h3>
+<p>Plan a stronger video with an audience-focused hook and searchable metadata.</p>
 <div class="n3-deliverable"><strong>Deliverable: </strong>One ready-to-film script, titles, description and chapters</div>
 <div class="n3-choices" role="group" aria-label="Choose your tradeoff">
 <button type="button" class="n3-choice" data-tier="fg" aria-pressed="false"><span>FAST + GOOD</span><strong>From $289</strong></button>
@@ -794,15 +153,13 @@
 <button type="button" class="n3-choice" data-tier="fc" aria-pressed="false"><span>CHEAP + FAST</span><strong>From $109</strong></button>
 </div>
 <div class="n3-detail"><b class="n3-days">3–14 business days (estimated)</b><div class="n3-tradeoff-line">NOT FAST · Full scope, thoughtful refinement and flexible scheduling.</div><div class="n3-included">Included: One 8–12 minute script, 3 titles, description, chapters and one revision; no thumbnail or video</div></div>
-<button class="n3-btn n3-request btn display-4" type="button">Request this service</button>
+<button class="n3-btn n3-request" type="button">Request this service</button>
 </article>
-</div>
-
-<div class="n3-card-col col-12 col-lg-4">
-<article class="n3-card" data-service="vsl" data-fgc-service="video-sales-letter-script" data-full="One 5–8 minute script, visual cues, objection handling, CTA and one revision" data-lite="One 3-minute script with a single CTA and basic scene notes" data-category="VSL &amp; Sales Videos" data-search="video sales letter script get the words and visual cues for a sales video without video-production costs. two-column spoken script and on-screen direction">
-<div class="n3-tag mbr-fonts-style">VSL &amp; Sales Videos</div>
-<h3 class="mbr-section-title mbr-fonts-style display-5">Video Sales Letter Script</h3>
-<p class="mbr-fonts-style">Get the words and visual cues for a sales video without video-production costs.</p>
+<!-- Internal workflow reference: AKA VSL Script | SuperPlug ID: custom:6ad303ffd234d8065161b7ba -->
+<article class="n3-card" data-service="vsl" data-superplug-name="VSL Script" data-superplug-id="custom:6ad303ffd234d8065161b7ba" data-full="One 5–8 minute script, visual cues, objection handling, CTA and one revision" data-lite="One 3-minute script with a single CTA and basic scene notes" data-category="VSL &amp; Sales Videos" data-search="video sales letter script get the words and visual cues for a sales video without video-production costs. two-column spoken script and on-screen direction">
+<div class="n3-tag">VSL &amp; Sales Videos</div>
+<h3>Video Sales Letter Script</h3>
+<p>Get the words and visual cues for a sales video without video-production costs.</p>
 <div class="n3-deliverable"><strong>Deliverable: </strong>Two-column spoken script and on-screen direction</div>
 <div class="n3-choices" role="group" aria-label="Choose your tradeoff">
 <button type="button" class="n3-choice" data-tier="fg" aria-pressed="false"><span>FAST + GOOD</span><strong>From $509</strong></button>
@@ -810,15 +167,13 @@
 <button type="button" class="n3-choice" data-tier="fc" aria-pressed="false"><span>CHEAP + FAST</span><strong>From $189</strong></button>
 </div>
 <div class="n3-detail"><b class="n3-days">3–14 business days (estimated)</b><div class="n3-tradeoff-line">NOT FAST · Full scope, thoughtful refinement and flexible scheduling.</div><div class="n3-included">Included: One 5–8 minute script, visual cues, objection handling, CTA and one revision</div></div>
-<button class="n3-btn n3-request btn display-4" type="button">Request this service</button>
+<button class="n3-btn n3-request" type="button">Request this service</button>
 </article>
-</div>
-
-<div class="n3-card-col col-12 col-lg-4">
-<article class="n3-card" data-service="linkedin" data-fgc-service="linkedin-profile-positioning" data-full="3 headlines, About rewrite, 2 experience summaries, keyword map and one revision; no banner graphics" data-lite="Headline and About rewrite with one positioning angle" data-category="Personal Brand &amp; Portfolio" data-search="linkedin profile positioning clarify your professional positioning for clients, employers or collaborators. headline, about section, experience framing and keyword suggestions">
-<div class="n3-tag mbr-fonts-style">Personal Brand &amp; Portfolio</div>
-<h3 class="mbr-section-title mbr-fonts-style display-5">LinkedIn Profile Positioning</h3>
-<p class="mbr-fonts-style">Clarify your professional positioning for clients, employers or collaborators.</p>
+<!-- Internal workflow reference: AKA LinkedIn Profile Makeover | SuperPlug ID: custom:6ad3033b24a6a7e783e22c36 -->
+<article class="n3-card" data-service="linkedin" data-superplug-name="LinkedIn Profile Makeover" data-superplug-id="custom:6ad3033b24a6a7e783e22c36" data-full="3 headlines, About rewrite, 2 experience summaries, keyword map and one revision; no banner graphics" data-lite="Headline and About rewrite with one positioning angle" data-category="Personal Brand &amp; Portfolio" data-search="linkedin profile positioning clarify your professional positioning for clients, employers or collaborators. headline, about section, experience framing and keyword suggestions">
+<div class="n3-tag">Personal Brand &amp; Portfolio</div>
+<h3>LinkedIn Profile Positioning</h3>
+<p>Clarify your professional positioning for clients, employers or collaborators.</p>
 <div class="n3-deliverable"><strong>Deliverable: </strong>Headline, About section, experience framing and keyword suggestions</div>
 <div class="n3-choices" role="group" aria-label="Choose your tradeoff">
 <button type="button" class="n3-choice" data-tier="fg" aria-pressed="false"><span>FAST + GOOD</span><strong>From $339</strong></button>
@@ -826,15 +181,13 @@
 <button type="button" class="n3-choice" data-tier="fc" aria-pressed="false"><span>CHEAP + FAST</span><strong>From $119</strong></button>
 </div>
 <div class="n3-detail"><b class="n3-days">3–14 business days (estimated)</b><div class="n3-tradeoff-line">NOT FAST · Full scope, thoughtful refinement and flexible scheduling.</div><div class="n3-included">Included: 3 headlines, About rewrite, 2 experience summaries, keyword map and one revision; no banner graphics</div></div>
-<button class="n3-btn n3-request btn display-4" type="button">Request this service</button>
+<button class="n3-btn n3-request" type="button">Request this service</button>
 </article>
-</div>
-
-<div class="n3-card-col col-12 col-lg-4">
-<article class="n3-card" data-service="bio" data-fgc-service="professional-biography-suite" data-full="4 bio lengths, first/third-person variants, 400-word About narrative and revision" data-lite="50- and 150-word bios with a short introduction" data-category="Personal Brand &amp; Portfolio" data-search="professional biography suite a consistent professional introduction for speaking, websites and profiles. short, medium and long biographies plus about narrative">
-<div class="n3-tag mbr-fonts-style">Personal Brand &amp; Portfolio</div>
-<h3 class="mbr-section-title mbr-fonts-style display-5">Professional Biography Suite</h3>
-<p class="mbr-fonts-style">A consistent professional introduction for speaking, websites and profiles.</p>
+<!-- Internal workflow reference: AKA Bio & About Pack | SuperPlug ID: custom:6ad302d80bb9383736fdaabd -->
+<article class="n3-card" data-service="bio" data-superplug-name="Bio &amp; About Pack" data-superplug-id="custom:6ad302d80bb9383736fdaabd" data-full="4 bio lengths, first/third-person variants, 400-word About narrative and revision" data-lite="50- and 150-word bios with a short introduction" data-category="Personal Brand &amp; Portfolio" data-search="professional biography suite a consistent professional introduction for speaking, websites and profiles. short, medium and long biographies plus about narrative">
+<div class="n3-tag">Personal Brand &amp; Portfolio</div>
+<h3>Professional Biography Suite</h3>
+<p>A consistent professional introduction for speaking, websites and profiles.</p>
 <div class="n3-deliverable"><strong>Deliverable: </strong>Short, medium and long biographies plus About narrative</div>
 <div class="n3-choices" role="group" aria-label="Choose your tradeoff">
 <button type="button" class="n3-choice" data-tier="fg" aria-pressed="false"><span>FAST + GOOD</span><strong>From $229</strong></button>
@@ -842,15 +195,13 @@
 <button type="button" class="n3-choice" data-tier="fc" aria-pressed="false"><span>CHEAP + FAST</span><strong>From $79</strong></button>
 </div>
 <div class="n3-detail"><b class="n3-days">3–14 business days (estimated)</b><div class="n3-tradeoff-line">NOT FAST · Full scope, thoughtful refinement and flexible scheduling.</div><div class="n3-included">Included: 4 bio lengths, first/third-person variants, 400-word About narrative and revision</div></div>
-<button class="n3-btn n3-request btn display-4" type="button">Request this service</button>
+<button class="n3-btn n3-request" type="button">Request this service</button>
 </article>
-</div>
-
-<div class="n3-card-col col-12 col-lg-4">
-<article class="n3-card" data-service="products" data-fgc-service="ecommerce-product-copy-batch" data-full="Up to 20 products, supplied-fact checks, SEO fields and CSV-ready copy; no images" data-lite="Up to 8 products with titles, concise descriptions and benefits" data-category="Product Photography &amp; Ads" data-search="ecommerce product copy batch make product information clearer, more persuasive and easier to upload. seo product titles, descriptions, benefits and structured fields">
-<div class="n3-tag mbr-fonts-style">Product Photography &amp; Ads</div>
-<h3 class="mbr-section-title mbr-fonts-style display-5">Ecommerce Product Copy Batch</h3>
-<p class="mbr-fonts-style">Make product information clearer, more persuasive and easier to upload.</p>
+<!-- Internal workflow reference: AKA Bulk Product Descriptions | SuperPlug ID: custom:6ad303aa4e68e887ed4537e4 -->
+<article class="n3-card" data-service="products" data-superplug-name="Bulk Product Descriptions" data-superplug-id="custom:6ad303aa4e68e887ed4537e4" data-full="Up to 20 products, supplied-fact checks, SEO fields and CSV-ready copy; no images" data-lite="Up to 8 products with titles, concise descriptions and benefits" data-category="Product Photography &amp; Ads" data-search="ecommerce product copy batch make product information clearer, more persuasive and easier to upload. seo product titles, descriptions, benefits and structured fields">
+<div class="n3-tag">Product Photography &amp; Ads</div>
+<h3>Ecommerce Product Copy Batch</h3>
+<p>Make product information clearer, more persuasive and easier to upload.</p>
 <div class="n3-deliverable"><strong>Deliverable: </strong>SEO product titles, descriptions, benefits and structured fields</div>
 <div class="n3-choices" role="group" aria-label="Choose your tradeoff">
 <button type="button" class="n3-choice" data-tier="fg" aria-pressed="false"><span>FAST + GOOD</span><strong>From $459</strong></button>
@@ -858,15 +209,13 @@
 <button type="button" class="n3-choice" data-tier="fc" aria-pressed="false"><span>CHEAP + FAST</span><strong>From $169</strong></button>
 </div>
 <div class="n3-detail"><b class="n3-days">3–14 business days (estimated)</b><div class="n3-tradeoff-line">NOT FAST · Full scope, thoughtful refinement and flexible scheduling.</div><div class="n3-included">Included: Up to 20 products, supplied-fact checks, SEO fields and CSV-ready copy; no images</div></div>
-<button class="n3-btn n3-request btn display-4" type="button">Request this service</button>
+<button class="n3-btn n3-request" type="button">Request this service</button>
 </article>
-</div>
-
-<div class="n3-card-col col-12 col-lg-4">
-<article class="n3-card" data-service="quiz" data-fgc-service="training-quiz-assessment-kit" data-full="20 questions, answer rationale, scoring rubric, learning-objective map and one revision; no hosted quiz" data-lite="10 questions, answer key and basic scoring guide" data-category="Courses &amp; Coaching" data-search="training quiz &amp; assessment kit check learner understanding with measurable questions and useful feedback. 20-question assessment with answer key, scoring and explanations">
-<div class="n3-tag mbr-fonts-style">Courses &amp; Coaching</div>
-<h3 class="mbr-section-title mbr-fonts-style display-5">Training Quiz &amp; Assessment Kit</h3>
-<p class="mbr-fonts-style">Check learner understanding with measurable questions and useful feedback.</p>
+<!-- Internal workflow reference: AKA Quiz & Assessment | SuperPlug ID: custom:6ad301fd02fe8b9dec7184a0 -->
+<article class="n3-card" data-service="quiz" data-superplug-name="Quiz &amp; Assessment" data-superplug-id="custom:6ad301fd02fe8b9dec7184a0" data-full="20 questions, answer rationale, scoring rubric, learning-objective map and one revision; no hosted quiz" data-lite="10 questions, answer key and basic scoring guide" data-category="Courses &amp; Coaching" data-search="training quiz &amp; assessment kit check learner understanding with measurable questions and useful feedback. 20-question assessment with answer key, scoring and explanations">
+<div class="n3-tag">Courses &amp; Coaching</div>
+<h3>Training Quiz &amp; Assessment Kit</h3>
+<p>Check learner understanding with measurable questions and useful feedback.</p>
 <div class="n3-deliverable"><strong>Deliverable: </strong>20-question assessment with answer key, scoring and explanations</div>
 <div class="n3-choices" role="group" aria-label="Choose your tradeoff">
 <button type="button" class="n3-choice" data-tier="fg" aria-pressed="false"><span>FAST + GOOD</span><strong>From $349</strong></button>
@@ -874,15 +223,13 @@
 <button type="button" class="n3-choice" data-tier="fc" aria-pressed="false"><span>CHEAP + FAST</span><strong>From $129</strong></button>
 </div>
 <div class="n3-detail"><b class="n3-days">3–14 business days (estimated)</b><div class="n3-tradeoff-line">NOT FAST · Full scope, thoughtful refinement and flexible scheduling.</div><div class="n3-included">Included: 20 questions, answer rationale, scoring rubric, learning-objective map and one revision; no hosted quiz</div></div>
-<button class="n3-btn n3-request btn display-4" type="button">Request this service</button>
+<button class="n3-btn n3-request" type="button">Request this service</button>
 </article>
-</div>
-
-<div class="n3-card-col col-12 col-lg-4">
-<article class="n3-card" data-service="pitch" data-fgc-service="pitch-deck-story-slide-copy" data-full="12 slides of copy, storyline, speaker notes and one revision; no visual deck production" data-lite="6-slide pitch outline with core talking points" data-category="Client Work &amp; Proposals" data-search="pitch deck story &amp; slide copy turn a business idea into a coherent presentation narrative without invented financials. 12-slide pitch structure, written slide copy and speaker notes">
-<div class="n3-tag mbr-fonts-style">Client Work &amp; Proposals</div>
-<h3 class="mbr-section-title mbr-fonts-style display-5">Pitch Deck Story &amp; Slide Copy</h3>
-<p class="mbr-fonts-style">Turn a business idea into a coherent presentation narrative without invented financials.</p>
+<!-- Internal workflow reference: AKA Pitch Deck from an Idea | SuperPlug ID: pitch-deck -->
+<article class="n3-card" data-service="pitch" data-superplug-name="Pitch Deck from an Idea" data-superplug-id="pitch-deck" data-full="12 slides of copy, storyline, speaker notes and one revision; no visual deck production" data-lite="6-slide pitch outline with core talking points" data-category="Client Work &amp; Proposals" data-search="pitch deck story &amp; slide copy turn a business idea into a coherent presentation narrative without invented financials. 12-slide pitch structure, written slide copy and speaker notes">
+<div class="n3-tag">Client Work &amp; Proposals</div>
+<h3>Pitch Deck Story &amp; Slide Copy</h3>
+<p>Turn a business idea into a coherent presentation narrative without invented financials.</p>
 <div class="n3-deliverable"><strong>Deliverable: </strong>12-slide pitch structure, written slide copy and speaker notes</div>
 <div class="n3-choices" role="group" aria-label="Choose your tradeoff">
 <button type="button" class="n3-choice" data-tier="fg" aria-pressed="false"><span>FAST + GOOD</span><strong>From $459</strong></button>
@@ -890,15 +237,13 @@
 <button type="button" class="n3-choice" data-tier="fc" aria-pressed="false"><span>CHEAP + FAST</span><strong>From $169</strong></button>
 </div>
 <div class="n3-detail"><b class="n3-days">3–14 business days (estimated)</b><div class="n3-tradeoff-line">NOT FAST · Full scope, thoughtful refinement and flexible scheduling.</div><div class="n3-included">Included: 12 slides of copy, storyline, speaker notes and one revision; no visual deck production</div></div>
-<button class="n3-btn n3-request btn display-4" type="button">Request this service</button>
+<button class="n3-btn n3-request" type="button">Request this service</button>
 </article>
-</div>
-
-<div class="n3-card-col col-12 col-lg-4">
-<article class="n3-card" data-service="ebook" data-fgc-service="blog-to-ebook-manuscript" data-full="Up to 8 supplied posts, edited 20–35 page-equivalent manuscript, intro and revision; no designed PDF" data-lite="Up to 3 supplied posts, short ebook outline and edited manuscript" data-category="Digital Products &amp; PLR" data-search="blog-to-ebook manuscript repurpose your existing articles into a cohesive downloadable publication. edited ebook manuscript, chapter structure and contents">
-<div class="n3-tag mbr-fonts-style">Digital Products &amp; PLR</div>
-<h3 class="mbr-section-title mbr-fonts-style display-5">Blog-to-Ebook Manuscript</h3>
-<p class="mbr-fonts-style">Repurpose your existing articles into a cohesive downloadable publication.</p>
+<!-- Internal workflow reference: AKA Blog to Ebook | SuperPlug ID: custom:6ad3011f14b7721a5dd5067e -->
+<article class="n3-card" data-service="ebook" data-superplug-name="Blog to Ebook" data-superplug-id="custom:6ad3011f14b7721a5dd5067e" data-full="Up to 8 supplied posts, edited 20–35 page-equivalent manuscript, intro and revision; no designed PDF" data-lite="Up to 3 supplied posts, short ebook outline and edited manuscript" data-category="Digital Products &amp; PLR" data-search="blog-to-ebook manuscript repurpose your existing articles into a cohesive downloadable publication. edited ebook manuscript, chapter structure and contents">
+<div class="n3-tag">Digital Products &amp; PLR</div>
+<h3>Blog-to-Ebook Manuscript</h3>
+<p>Repurpose your existing articles into a cohesive downloadable publication.</p>
 <div class="n3-deliverable"><strong>Deliverable: </strong>Edited ebook manuscript, chapter structure and contents</div>
 <div class="n3-choices" role="group" aria-label="Choose your tradeoff">
 <button type="button" class="n3-choice" data-tier="fg" aria-pressed="false"><span>FAST + GOOD</span><strong>From $619</strong></button>
@@ -906,15 +251,13 @@
 <button type="button" class="n3-choice" data-tier="fc" aria-pressed="false"><span>CHEAP + FAST</span><strong>From $229</strong></button>
 </div>
 <div class="n3-detail"><b class="n3-days">3–14 business days (estimated)</b><div class="n3-tradeoff-line">NOT FAST · Full scope, thoughtful refinement and flexible scheduling.</div><div class="n3-included">Included: Up to 8 supplied posts, edited 20–35 page-equivalent manuscript, intro and revision; no designed PDF</div></div>
-<button class="n3-btn n3-request btn display-4" type="button">Request this service</button>
+<button class="n3-btn n3-request" type="button">Request this service</button>
 </article>
-</div>
-
-<div class="n3-card-col col-12 col-lg-4">
-<article class="n3-card" data-service="onboard" data-fgc-service="customer-onboarding-email-kit" data-full="4 emails, subject lines, preview text, timing, segmentation notes and one revision" data-lite="2 onboarding emails and a simple timing plan" data-category="Email Marketing" data-search="customer onboarding email kit help new customers reach their first successful result with clear guidance. four onboarding emails and customer journey timing map">
-<div class="n3-tag mbr-fonts-style">Email Marketing</div>
-<h3 class="mbr-section-title mbr-fonts-style display-5">Customer Onboarding Email Kit</h3>
-<p class="mbr-fonts-style">Help new customers reach their first successful result with clear guidance.</p>
+<!-- Internal workflow reference: AKA Customer Onboarding Emails | SuperPlug ID: custom:6ad30182dd80caf728f24a46 -->
+<article class="n3-card" data-service="onboard" data-superplug-name="Customer Onboarding Emails" data-superplug-id="custom:6ad30182dd80caf728f24a46" data-full="4 emails, subject lines, preview text, timing, segmentation notes and one revision" data-lite="2 onboarding emails and a simple timing plan" data-category="Email Marketing" data-search="customer onboarding email kit help new customers reach their first successful result with clear guidance. four onboarding emails and customer journey timing map">
+<div class="n3-tag">Email Marketing</div>
+<h3>Customer Onboarding Email Kit</h3>
+<p>Help new customers reach their first successful result with clear guidance.</p>
 <div class="n3-deliverable"><strong>Deliverable: </strong>Four onboarding emails and customer journey timing map</div>
 <div class="n3-choices" role="group" aria-label="Choose your tradeoff">
 <button type="button" class="n3-choice" data-tier="fg" aria-pressed="false"><span>FAST + GOOD</span><strong>From $289</strong></button>
@@ -922,94 +265,41 @@
 <button type="button" class="n3-choice" data-tier="fc" aria-pressed="false"><span>CHEAP + FAST</span><strong>From $109</strong></button>
 </div>
 <div class="n3-detail"><b class="n3-days">3–14 business days (estimated)</b><div class="n3-tradeoff-line">NOT FAST · Full scope, thoughtful refinement and flexible scheduling.</div><div class="n3-included">Included: 4 emails, subject lines, preview text, timing, segmentation notes and one revision</div></div>
-<button class="n3-btn n3-request btn display-4" type="button">Request this service</button>
+<button class="n3-btn n3-request" type="button">Request this service</button>
 </article>
-</div>
-
-   </div>
-
-   <p class="n3-footnote mbr-fonts-style">Scope and turnaround begin after receipt of all required materials and project acceptance. All displayed “From” prices are starting prices, not fixed quotes. Timing begins only after complete inputs, scope approval and an agreed start date. Images, video production, third-party licenses, hosting, advertising spend, implementation and additional revisions are excluded unless stated. AI-assisted content is reviewed before delivery.</p>
+</div><p class="n3-footnote">Scope and turnaround begin after receipt of all required materials and project acceptance. All displayed “From” prices are starting prices, not fixed quotes. Timing begins only after complete inputs, scope approval and an agreed start date. Images, video production, third-party licenses, hosting, advertising spend, implementation and additional revisions are excluded unless stated. AI-assisted content is reviewed before delivery.</p>
   </div>
+  <div class="n3-section" id="n3-fgc-request"><div class="n3-eyebrow">Project intake</div><h2>Tell us what you need.</h2><p class="n3-muted">Choose a service above to prefill your request. No payment is collected on this page.</p>
+   <div class="n3-intake"><div class="n3-selected" id="n3-fgc-selected" aria-live="polite">No service selected yet. You can still send a general project inquiry.</div>
+   
+<form id="n3-fgc-form" action="https://script.google.com/macros/s/AKfycbycuy5_qpPcLEDh8BOmrgg9xaVx8o2U5p8np8UINAPNNxOXKABsqDvs8jcGYKZKTYprMQ/exec" method="post">
+  <input type="hidden" name="form" value="fgc">
+  <input type="hidden" name="page" id="n3-fgc-page" value="">
+  <input type="hidden" name="utm" id="n3-fgc-utm" value="">
+  <input type="hidden" name="service_id" id="n3-fgc-service" value="">
+  <input type="hidden" name="tier" id="n3-fgc-tier" value="">
+  <div class="n3-hp" aria-hidden="true"><label>Leave this field blank<input name="hp" tabindex="-1" autocomplete="off" value=""></label></div>
 
-  <div class="n3-section" id="n3-fgc-request">
-   <div class="n3-eyebrow mbr-section-subtitle mbr-fonts-style">Project intake</div>
-   <h2 class="mbr-section-subtitle mbr-fonts-style display-5">Tell us what you need.</h2>
-   <p class="n3-muted mbr-fonts-style">Choose a service above, or pick one here. Not sure which one? <a href="?service=general#n3-fgc-request">Send a general inquiry</a>. We read your details, email a payment link, and then ask only the questions your notes did not already answer. Nothing is charged on this page.</p>
-
-   <div class="n3-intake">
-    <form id="n3-fgc-form" method="post" action="https://script.google.com/macros/s/AKfycbycuy5_qpPcLEDh8BOmrgg9xaVx8o2U5p8np8UINAPNNxOXKABsqDvs8jcGYKZKTYprMQ/exec" accept-charset="UTF-8">
-     <input type="hidden" name="form" value="fgc">
-     <input type="hidden" name="page" id="n3-fgc-page" value="">
-     <input type="hidden" name="utm" id="n3-fgc-utm" value="">
-     <div class="n3-hp" aria-hidden="true">
-      <label for="n3-fgc-hp">Leave this empty</label>
-      <input type="text" id="n3-fgc-hp" name="hp" tabindex="-1" autocomplete="off">
-     </div>
-
-     <div class="n3-form-grid row">
-      <!-- The service options are built from the cards by the script.
-           Add the card, not an option here. -->
-      <div class="n3-form-field n3-form-wide col-12">
-       <label for="n3-fgc-service">Service</label>
-       <select id="n3-fgc-service" name="service_id" aria-describedby="n3-fgc-service-hint" required="">
-        <option value="">Choose a service</option>
-       </select>
-       <span class="n3-hint" id="n3-fgc-service-hint">Not sure? Choose the closest one and explain the rest in the details.</span>
-      </div>
-
-      <fieldset class="n3-tier-group n3-form-wide col-12" id="n3-fgc-tier-box">
-       <legend>Tradeoff</legend>
-       <p class="n3-hint mbr-fonts-style">Pick the two that matter most for this job. The third gives way.</p>
-       <div class="n3-tiers row" id="n3-fgc-tiers"></div>
-      </fieldset>
-
-      <div class="n3-form-field col-12 col-lg-4">
-       <label for="n3-fgc-name">Your name</label>
-       <input class="form-control" type="text" id="n3-fgc-name" name="name" autocomplete="name" required="" maxlength="120">
-      </div>
-
-      <div class="n3-form-field col-12 col-lg-4">
-       <label for="n3-fgc-email">Email</label>
-       <input class="form-control" type="email" id="n3-fgc-email" name="email" autocomplete="email" aria-describedby="n3-fgc-email-hint" required="" maxlength="200">
-       <span class="n3-hint" id="n3-fgc-email-hint">The payment link and the questions go here.</span>
-      </div>
-
-      <div class="n3-form-field col-12 col-lg-4">
-       <label for="n3-fgc-business">Business or project name</label>
-       <input class="form-control" type="text" id="n3-fgc-business" name="business" autocomplete="organization" maxlength="160">
-      </div>
-
-      <div class="n3-form-field n3-form-wide col-12">
-       <label for="n3-fgc-website">Website or social link (optional)</label>
-       <input class="form-control" type="url" id="n3-fgc-website" name="website" autocomplete="url" maxlength="300" placeholder="https://">
-      </div>
-
-      <div class="n3-form-field n3-form-wide n3-form-details col-12">
-       <label for="n3-fgc-details">Project details and desired outcome</label>
-       <textarea class="form-control" id="n3-fgc-details" name="details" rows="7" required="" minlength="20" maxlength="8000" aria-describedby="n3-fgc-details-hint" placeholder="The more of the brief you put here, the fewer questions we have to ask later."></textarea>
-       <span class="n3-hint" id="n3-fgc-details-hint">What is the job, who is it for, and what should exist when it is done?</span>
-      </div>
-     </div>
-
-     <div class="n3-form-consent">
-      <input type="checkbox" id="n3-fgc-consent" name="consent" value="yes" required="">
-      <label for="n3-fgc-consent">I agree that Neutral3rd may store these details and email me about this request. I understand the price shown is a starting price for the tradeoff I chose, confirmed after my materials are reviewed, and that no work starts until I approve the final scope.</label>
-     </div>
-
-     <button type="submit" class="n3-btn btn display-4" id="n3-fgc-send">Send project request</button>
-     <p class="n3-status" id="n3-fgc-status" role="status" aria-live="polite"></p>
-     <p class="n3-legal mbr-fonts-style">Your details are sent to Neutral3rd and stored in a private Drive folder and pipeline sheet, used only to quote and deliver this job. See the <a href="https://neutral3rd.space/privacy">privacy policy</a>. Nothing is charged on this page. If you chose a service, the next email carries a secure Stripe link for the amount shown.</p>
-     <noscript><p class="n3-legal mbr-fonts-style">This form needs JavaScript. You can email <a href="mailto:renee.leach@neutral3rd.space">renee.leach@neutral3rd.space</a> with the service, the tradeoff and your project details instead.</p></noscript>
-    </form>
+  <div class="n3-fields">
+    <label class="n3-field">Your name <input name="name" type="text" required="" autocomplete="name"></label>
+    <label class="n3-field">Email <input name="email" type="email" required="" autocomplete="email"></label>
+    <label class="n3-field">Business or project name <input name="business" type="text" autocomplete="organization"></label>
+  </div>
+  <div class="n3-fields">
+    <label class="n3-field">Website <input name="website" type="url" autocomplete="url" placeholder="https://"></label>
+  </div>
+  <div class="n3-details-row">
+    <label class="n3-field n3-details-full">Project details and desired outcome <textarea name="details" rows="6" required="" minlength="20" placeholder="What do you need? What assets do you already have? Are there deadlines or special requirements?"></textarea></label>
+  </div>
+  <label class="n3-consent"><input name="consent" type="checkbox" value="yes" required=""> I agree that Neutral3rd may use this information to respond to my inquiry.</label>
+  <p class="n3-legal">Submitting sends your inquiry to Neutral3rd for follow-up. No payment is collected on this page.</p>
+  <button type="submit" class="n3-btn">Send project request</button>
+</form>
+       
    </div>
   </div>
-
  </div>
-
-
-</section>
-
-<!-- END OF BLOCK --></div>
+</section></div>
 
 <section data-bs-version="5.1" class="footer01 impactm5 cid-vA8TDuKXjP" once="footers" id="footer01-4n">
 
@@ -1156,9 +446,9 @@ img {
   ];
 
   var DAYS = {
-    fg: { days: '2\u20134 business days (estimated)', detail: 'NOT CHEAP \u00b7 Full scope, priority scheduling and deeper refinement.' },
-    gc: { days: '3\u201314 business days (estimated)', detail: 'NOT FAST \u00b7 Full scope, thoughtful refinement and flexible scheduling.' },
-    fc: { days: '2\u20134 business days (estimated)', detail: 'NOT FULL-SERVICE GOOD \u00b7 Template-led basics, limited depth and minimal revisions.' }
+    fg: { days: '2â€“4 business days (estimated)', detail: 'NOT CHEAP Â· Full scope, priority scheduling and deeper refinement.' },
+    gc: { days: '3â€“14 business days (estimated)', detail: 'NOT FAST Â· Full scope, thoughtful refinement and flexible scheduling.' },
+    fc: { days: '2â€“4 business days (estimated)', detail: 'NOT FULL-SERVICE GOOD Â· Template-led basics, limited depth and minimal revisions.' }
   };
 
   var cards = Array.prototype.slice.call(root.querySelectorAll('.n3-card'));
