@@ -23,11 +23,626 @@
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
   <link rel="preload" href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,200,300,400,500,600,700,100i,200i,300i,400i,500i,600i,700i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,200,300,400,500,600,700,100i,200i,300i,400i,500i,600i,700i&display=swap"></noscript>
-  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=XtyZXn"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=XtyZXn" type="text/css">
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=1kDMz2"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=1kDMz2" type="text/css">
 
   
   
   <meta name="robots" content="noindex, nofollow">
+
+
+<!-- Neutral3rd Fast. Good. Cheap. page styles.
+     Paste into Page Settings > Code Editor > Inside <head>.
+     Leave the block CSS tab empty: Mobirise saves only part of it.
+-->
+<style>
+/* ============================================================
+   Neutral3rd - Fast. Good. Cheap.
+   Scoped styles for the #n3-fgc block, written in Mobirise's own
+   conventions: mbr-section, container, the Bootstrap row and column
+   grid, mbr-section-title, mbr-section-subtitle, mbr-fonts-style,
+   btn and form-control.
+   Paste into the site CSS, replacing the old #n3-fgc block, including the
+   rules the old block scoped as #custom-html-5e #n3-fgc.
+   Every rule starts with #n3-fgc, so nothing here can reach the rest
+   of the Mobirise site. The panel compiles through Less, so this file
+   avoids calc() arithmetic on CSS variables; values are written out.
+   ============================================================ */
+
+#n3-fgc {
+  --n3-bg: #202426;
+  --n3-panel: #292e31;
+  --n3-line: #485055;
+  --n3-orange: #c75423;
+  --n3-white: #f8f8f6;
+  --n3-muted: #c3c8ca;
+  background:
+    radial-gradient(ellipse at 85% 4%, rgba(199, 84, 35, 0.17), transparent 38%),
+    repeating-linear-gradient(120deg, transparent 0 80px, rgba(255, 255, 255, 0.018) 81px 82px),
+    var(--n3-bg);
+  color: var(--n3-white);
+  padding: 80px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.55;
+  isolation: isolate;
+}
+
+#n3-fgc * { box-sizing: border-box; }
+
+/* One content measure at every breakpoint, on the Mobirise container. */
+#n3-fgc .container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* The theme's type scale and button spacing are neutralised inside the
+   block so the approved design keeps its own type and rhythm. */
+#n3-fgc .mbr-fonts-style { font-family: inherit; }
+#n3-fgc .mbr-section-btn { margin: 0; font-size: inherit; }
+#n3-fgc .btn { margin: 0; }
+
+/* The site forces square, light buttons inside .mbr-section-btn. */
+#n3-fgc .mbr-section-btn .btn {
+  border-radius: 5px !important;
+  font-weight: 700 !important;
+}
+#n3-fgc .mbr-section-btn .btn:hover,
+#n3-fgc .mbr-section-btn .btn:focus { transform: none; }
+
+/* The site CSS forces pill inputs and a monospace face on .form-control
+   with !important, so the block restores its own input shape. */
+#n3-fgc .form-control {
+  height: auto;
+  line-height: inherit;
+  border-radius: 5px !important;
+}
+#n3-fgc textarea.form-control { line-height: inherit !important; }
+#n3-fgc .form-control:hover,
+#n3-fgc .form-control:focus {
+  border-color: #b8bfc2 !important;
+  box-shadow: none;
+}
+
+/* ------------------------------------------------ typography --- */
+
+#n3-fgc .n3-eyebrow {
+  color: #ee9b73;
+  letter-spacing: .19em;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: inherit;
+  text-transform: uppercase;
+}
+
+#n3-fgc h1 {
+  font-size: clamp(44px, 7vw, 90px);
+  line-height: 1.04;
+  letter-spacing: -0.05em;
+  margin: 12px 0;
+}
+
+#n3-fgc h2 {
+  font-size: clamp(26px, 4vw, 42px);
+  line-height: 1.15;
+  margin: 0 0 12px;
+}
+
+#n3-fgc h3 {
+  font-size: 21px;
+  line-height: 1.25;
+  margin: 0 0 12px;
+}
+
+#n3-fgc p { margin: 0 0 15px; }
+
+#n3-fgc .n3-accent { color: #e37e4d; }
+
+#n3-fgc .n3-muted { color: var(--n3-muted); }
+
+#n3-fgc .n3-muted a,
+#n3-fgc .n3-legal a {
+  color: #ffb28e;
+  text-decoration: underline;
+}
+
+#n3-fgc .n3-intro {
+  font-size: 19px;
+  max-width: 740px;
+  color: var(--n3-muted);
+}
+
+/* ------------------------------------------------------ hero --- */
+
+#n3-fgc .n3-hero {
+  padding: 20px 0 55px;
+  border-bottom: 1px solid var(--n3-line);
+  position: relative;
+}
+
+#n3-fgc .n3-hero:after {
+  content: '';
+  position: absolute;
+  right: 1%;
+  top: 3%;
+  width: 240px;
+  height: 240px;
+  border: 1px solid rgba(199, 84, 35, 0.28);
+  border-radius: 50%;
+  box-shadow: 0 0 0 28px rgba(199, 84, 35, 0.035), 0 0 0 70px rgba(199, 84, 35, 0.025);
+  pointer-events: none;
+}
+
+#n3-fgc .n3-hero > * { position: relative; z-index: 1; }
+
+#n3-fgc .n3-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin: 26px 0;
+}
+
+#n3-fgc .n3-pill {
+  border: 1px solid #6c7376;
+  padding: 8px 12px;
+  border-radius: 40px;
+  font-size: 13px;
+  color: #e8e9e9;
+}
+
+/* --------------------------------------------------- buttons --- */
+
+#n3-fgc .n3-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  background: var(--n3-orange);
+  color: #fff !important;
+  border: 1px solid var(--n3-orange);
+  border-radius: 5px;
+  padding: 11px 18px;
+  text-decoration: none;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+}
+
+#n3-fgc .n3-btn:hover,
+#n3-fgc .n3-btn:focus-visible { background: #e16a35; }
+
+#n3-fgc .n3-btn[disabled] { opacity: .6; cursor: default; }
+
+#n3-fgc .n3-btn-outline {
+  background: transparent;
+  border-color: #9b9fa1;
+}
+
+/* -------------------------------------------------- sections --- */
+
+#n3-fgc .n3-section { padding: 48px 0 0; }
+
+#n3-fgc #n3-fgc-how,
+#n3-fgc #n3-fgc-catalog,
+#n3-fgc #n3-fgc-request { scroll-margin-top: 96px; }
+
+/* ------------------------------- Mobirise row and column grid --- */
+
+/* Mobirise compiles this panel with Less, which fails on calc() arithmetic
+   applied to a CSS variable. Each gutter is written out as a plain value. */
+
+#n3-fgc .row {
+  margin-left: -9px;
+  margin-right: -9px;
+  margin-bottom: -18px;
+}
+
+#n3-fgc .row > [class*="col-"] {
+  min-width: 0;
+  padding-left: 9px;
+  padding-right: 9px;
+  margin-bottom: 18px;
+}
+
+#n3-fgc .row.n3-principles {
+  margin-top: 24px;
+  margin-left: -7.5px;
+  margin-right: -7.5px;
+  margin-bottom: -15px;
+}
+
+#n3-fgc .row.n3-principles > [class*="col-"] {
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+  margin-bottom: 15px;
+}
+
+#n3-fgc .row.n3-form-grid {
+  align-items: flex-start;
+  margin-left: -7.5px;
+  margin-right: -7.5px;
+  margin-bottom: -15px;
+}
+
+#n3-fgc .row.n3-form-grid > [class*="col-"] {
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+  margin-bottom: 15px;
+}
+
+#n3-fgc .row.n3-tiers {
+  margin-top: 4px;
+  margin-left: -4px;
+  margin-right: -4px;
+  margin-bottom: -8px;
+}
+
+#n3-fgc .row.n3-tiers > [class*="col-"] {
+  padding-left: 4px;
+  padding-right: 4px;
+  margin-bottom: 8px;
+}
+
+/* ----------------------------------------------- principles --- */
+
+#n3-fgc .n3-principle {
+  height: 100%;
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid var(--n3-line);
+  padding: 22px;
+  border-radius: 10px;
+}
+
+#n3-fgc .n3-principle strong {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+#n3-fgc .n3-principle p {
+  font-size: 14px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+#n3-fgc .n3-principle p b { color: #f9f9f7; }
+
+#n3-fgc .n3-tradeoff {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .13em;
+  color: #ffae87;
+  margin: 0 0 12px;
+  border-bottom: 1px solid rgba(255, 174, 135, 0.5);
+  padding-bottom: 5px;
+}
+
+/* --------------------------------------------------- catalog --- */
+
+#n3-fgc .n3-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  margin: 24px 0;
+}
+
+#n3-fgc input,
+#n3-fgc select,
+#n3-fgc textarea {
+  background: #fff;
+  color: #202426;
+  border: 1px solid #b8bfc2;
+  border-radius: 5px;
+  padding: 12px;
+  font: inherit;
+  max-width: 100%;
+}
+
+#n3-fgc input::placeholder,
+#n3-fgc textarea::placeholder {
+  color: #596266;
+  opacity: 1;
+}
+
+#n3-fgc .n3-toolbar input { flex: 2 1 230px; }
+#n3-fgc .n3-toolbar select { flex: 1 1 220px; }
+
+#n3-fgc .n3-count { color: var(--n3-muted); font-size: 13px; }
+
+#n3-fgc .n3-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: var(--n3-panel);
+  border: 1px solid var(--n3-line);
+  border-radius: 12px;
+  padding: 23px;
+  min-width: 0;
+}
+
+#n3-fgc .n3-card[hidden] { display: none !important; }
+
+#n3-fgc .n3-tag {
+  color: #ed9a73;
+  font-size: 11px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+#n3-fgc .n3-card p { color: var(--n3-muted); font-size: 14px; }
+
+#n3-fgc .n3-deliverable {
+  font-size: 13px;
+  padding: 13px 0;
+  border-top: 1px solid var(--n3-line);
+  border-bottom: 1px solid var(--n3-line);
+  margin: 7px 0 17px;
+}
+
+#n3-fgc .n3-deliverable b { color: #fff; }
+
+#n3-fgc .n3-choices {
+  display: grid;
+  gap: 8px;
+  margin-top: auto;
+}
+
+#n3-fgc .n3-choice {
+  width: 100%;
+  text-align: left;
+  border: 1px solid #62696d;
+  border-radius: 7px;
+  background: #303639;
+  color: #fff;
+  padding: 10px 12px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  align-items: center;
+  font: inherit;
+  font-size: 13px;
+}
+
+#n3-fgc .n3-choice[aria-pressed="true"] {
+  border-color: #ee8957;
+  background: #48352c;
+  box-shadow: inset 3px 0 0 #ee8957;
+}
+
+#n3-fgc .n3-choice span {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+#n3-fgc .n3-choice strong {
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+}
+
+#n3-fgc .n3-detail {
+  min-height: 148px;
+  margin-top: 14px;
+  font-size: 13px;
+  color: #d6dadc;
+}
+
+#n3-fgc .n3-detail b { color: #fff; }
+
+#n3-fgc .n3-tradeoff-line {
+  color: #ffb28e;
+  font-weight: 700;
+  margin: 7px 0 9px;
+  line-height: 1.45;
+}
+
+#n3-fgc .n3-included { color: #d5d9da; line-height: 1.5; }
+
+#n3-fgc .n3-card .n3-btn {
+  width: 100%;
+  font-size: 14px;
+}
+
+#n3-fgc .n3-footnote {
+  font-size: 13px;
+  color: var(--n3-muted);
+  margin-top: 17px;
+}
+
+/* ---------------------------------------------- intake form --- */
+
+#n3-fgc .n3-intake {
+  border: 1px solid #6b5550;
+  background: linear-gradient(135deg, #2d3032, #302923);
+  border-radius: 12px;
+  padding: 28px;
+  margin-top: 30px;
+}
+
+#n3-fgc .n3-form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 14px;
+  font-weight: 400;
+  min-width: 0;
+}
+
+#n3-fgc .n3-form-field > label {
+  font-weight: 700;
+}
+
+#n3-fgc .n3-form-field input,
+#n3-fgc .n3-form-field select,
+#n3-fgc .n3-form-field textarea {
+  width: 100%;
+  font-weight: 400;
+}
+
+#n3-fgc .n3-hint {
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--n3-muted);
+}
+
+#n3-fgc .n3-form-details textarea {
+  min-height: 175px;
+  resize: vertical;
+}
+
+#n3-fgc .n3-tier-group {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+}
+
+#n3-fgc .n3-tier-group legend {
+  font-size: 14px;
+  font-weight: 700;
+  padding: 0;
+  margin-bottom: 5px;
+}
+
+#n3-fgc .n3-tier-group .n3-hint {
+  margin: 0 0 8px;
+}
+
+#n3-fgc .n3-radio {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+#n3-fgc .n3-radio input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+#n3-fgc .n3-radio-body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 4px;
+  border: 1px solid #62696d;
+  border-radius: 7px;
+  background: #303639;
+  padding: 10px 12px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+#n3-fgc .n3-radio-body strong {
+  font-size: 16px;
+  letter-spacing: -0.02em;
+}
+
+#n3-fgc .n3-radio-note {
+  font-size: 11px;
+  font-weight: 400;
+  color: #d5d9da;
+}
+
+#n3-fgc .n3-radio input:checked + .n3-radio-body {
+  border-color: #ee8957;
+  background: #48352c;
+  box-shadow: inset 3px 0 0 #ee8957;
+}
+
+#n3-fgc .n3-radio input:focus-visible + .n3-radio-body {
+  outline: 3px solid #ffb58d;
+  outline-offset: 3px;
+}
+
+#n3-fgc .n3-form-consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 18px 0;
+  font-size: 13px;
+  color: #e8e9e9;
+  font-weight: 400;
+}
+
+#n3-fgc .n3-form-consent input {
+  width: 18px;
+  height: 18px;
+  flex: 0 0 18px;
+  margin-top: 2px;
+  padding: 0;
+  accent-color: var(--n3-orange);
+}
+
+#n3-fgc .n3-legal {
+  font-size: 12px;
+  color: var(--n3-muted);
+}
+
+#n3-fgc .n3-status {
+  min-height: 1.4em;
+  margin: 14px 0 0;
+  font-size: 14px;
+  color: #d6dadc;
+}
+
+#n3-fgc .n3-status[data-state="error"] { color: #ffb4a2; }
+
+#n3-fgc .n3-hp {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/* -------------------------------------------------- feedback --- */
+
+#n3-fgc :focus-visible {
+  outline: 3px solid #ffb58d;
+  outline-offset: 3px;
+}
+
+#n3-fgc [hidden] { display: none !important; }
+
+/* ------------------------------------------------- responsive --- */
+
+@media (max-width: 991px) {
+  #n3-fgc .n3-grid > [class*="col-"] { flex: 0 0 50%; width: 50%; max-width: 50%; }
+  #n3-fgc .n3-principles > [class*="col-"],
+  #n3-fgc .n3-form-grid > [class*="col-"]:not(.n3-form-wide),
+  #n3-fgc .n3-tiers > [class*="col-"] { flex: 0 0 33.333333%; width: 33.333333%; max-width: 33.333333%; }
+}
+
+/* The design keeps three cards across until 960, where Bootstrap's own
+   column breakpoint would already have dropped to one. */
+@media (min-width: 961px) and (max-width: 991px) {
+  #n3-fgc .n3-grid > [class*="col-"] { flex: 0 0 33.333333%; width: 33.333333%; max-width: 33.333333%; }
+}
+
+@media (max-width: 700px) {
+  #n3-fgc .n3-form-grid > [class*="col-"]:not(.n3-form-wide),
+  #n3-fgc .n3-tiers > [class*="col-"] { flex: 0 0 100%; width: 100%; max-width: 100%; }
+}
+
+@media (max-width: 640px) {
+  #n3-fgc { padding: 48px 0; }
+  #n3-fgc .container { padding: 0 16px; }
+  #n3-fgc .n3-grid > [class*="col-"],
+  #n3-fgc .n3-principles > [class*="col-"] { flex: 0 0 100%; width: 100%; max-width: 100%; }
+  #n3-fgc .n3-hero:after { opacity: .3; width: 150px; height: 150px; }
+  #n3-fgc .n3-intake { padding: 19px; }
+  #n3-fgc .n3-detail { min-height: 0; }
+}
+
+</style>
 
 <meta name="theme-color" content="#f9f6e0">
 <link rel="manifest" href="manifest.json">
@@ -819,7 +1434,7 @@ img {
 })();
 </script>
  <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a></div>
-  
-<script>"use strict";if("loading"in HTMLImageElement.prototype){document.querySelectorAll('img[loading="lazy"]').forEach(e=>{e.src=e.dataset.src;if(e.getAttribute("style")){e.setAttribute("data-temp-style",e.getAttribute("style"))};if(e.getAttribute("data-aspectratio")){e.style.paddingTop=100*e.getAttribute("data-aspectratio")+"%";e.style.height=0;}e.onload=function(){if(e.getAttribute("data-temp-style")){e.setAttribute("style", e.getAttribute("data-temp-style"))}else{e.removeAttribute("style")};e.removeAttribute("data-temp-style")}})}else{const e=document.createElement("script");e.src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js";document.body.appendChild(e)}</script>
+  <script>"use strict";if("loading"in HTMLImageElement.prototype){document.querySelectorAll('img[loading="lazy"]').forEach(e=>{e.src=e.dataset.src;if(e.getAttribute("style")){e.setAttribute("data-temp-style",e.getAttribute("style"))};if(e.getAttribute("data-aspectratio")){e.style.paddingTop=100*e.getAttribute("data-aspectratio")+"%";e.style.height=0;}e.onload=function(){if(e.getAttribute("data-temp-style")){e.setAttribute("style", e.getAttribute("data-temp-style"))}else{e.removeAttribute("style")};e.removeAttribute("data-temp-style")}})}else{const e=document.createElement("script");e.src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js";document.body.appendChild(e)}</script>
+
 </body>
 </html>
