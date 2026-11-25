@@ -23,7 +23,7 @@
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
   <link rel="preload" href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,200,300,400,500,600,700,100i,200i,300i,400i,500i,600i,700i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,200,300,400,500,600,700,100i,200i,300i,400i,500i,600i,700i&display=swap"></noscript>
-  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=kXsfpu"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=kXsfpu" type="text/css">
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=a6usd6"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=a6usd6" type="text/css">
 
   
   
@@ -271,7 +271,27 @@
   </div>
   <div class="n3-section" id="n3-fgc-request"><div class="n3-eyebrow">Project intake</div><h2>Tell us what you need.</h2><p class="n3-muted">Choose a service above to prefill your request. No payment is collected on this page.</p>
    <div class="n3-intake"><div class="n3-selected" id="n3-fgc-selected" aria-live="polite">No service selected yet. You can still send a general project inquiry.</div>
-    <form id="n3-fgc-form"><div class="n3-fields"><label class="n3-field">Your name <input name="name" required="" autocomplete="name"></label><label class="n3-field">Email <input name="email" type="email" required="" autocomplete="email"></label><label class="n3-field">Business or project name <input name="business" autocomplete="organization"></label></div><div class="n3-details-row"><label class="n3-field n3-details-full">Project details and desired outcome <textarea name="details" rows="6" required="" placeholder="What do you need? What assets do you already have? Are there deadlines or special requirements?"></textarea></label></div><p class="n3-legal">Submitting opens your email application with a prepared project request. You must send the email to complete your inquiry. No information is stored by this webpage.</p><button type="submit" class="n3-btn">Prepare email request</button></form>
+   <!-- <form id="n3-fgc-form"><div class="n3-fields"><label class="n3-field">Your name <input name="name" required="" autocomplete="name"></label><label class="n3-field">Email <input name="email" type="email" required="" autocomplete="email"></label><label class="n3-field">Business or project name <input name="business" autocomplete="organization"></label></div><div class="n3-details-row"><label class="n3-field n3-details-full">Project details and desired outcome <textarea name="details" rows="6" required="" placeholder="What do you need? What assets do you already have? Are there deadlines or special requirements?"></textarea></label></div><p class="n3-legal">Submitting opens your email application with a prepared project request. You must send the email to complete your inquiry. No information is stored by this webpage.</p><button type="submit" class="n3-btn">Prepare email request</button></form> -->
+       
+       <form id="n3-fgc-form" action="https://script.google.com/macros/s/AKfycbycuy5_qpPcLEDh8BOmrgg9xaVx8o2U5p8np8UINAPNNxOXKABsqDvs8jcGYKZKTYprMQ/exec" method="post">
+  <input type="hidden" name="form" value="fgc">
+  <input type="hidden" name="page" id="n3-fgc-page" value="">
+  <input type="hidden" name="utm" id="n3-fgc-utm" value="">
+  <input type="hidden" name="service_id" id="n3-fgc-service" value="">
+  <input type="hidden" name="tier" id="n3-fgc-tier" value="">
+  <input type="hidden" name="hp" value="">
+
+  <!-- Keep the existing Mobirise form-group wrappers and styling. -->
+  <input name="name" type="text" required="">
+  <input name="email" type="email" required="">
+  <input name="business" type="text">
+  <input name="website" type="url">
+  <textarea name="details" required="" minlength="20"></textarea>
+  <input name="consent" type="checkbox" value="yes" required="">
+
+  <button type="submit">Send request</button>
+</form>
+       
    </div>
   </div>
  </div>
@@ -761,7 +781,7 @@ img {
 })();
 </script>
  <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a></div>
-  <script>"use strict";if("loading"in HTMLImageElement.prototype){document.querySelectorAll('img[loading="lazy"]').forEach(e=>{e.src=e.dataset.src;if(e.getAttribute("style")){e.setAttribute("data-temp-style",e.getAttribute("style"))};if(e.getAttribute("data-aspectratio")){e.style.paddingTop=100*e.getAttribute("data-aspectratio")+"%";e.style.height=0;}e.onload=function(){if(e.getAttribute("data-temp-style")){e.setAttribute("style", e.getAttribute("data-temp-style"))}else{e.removeAttribute("style")};e.removeAttribute("data-temp-style")}})}else{const e=document.createElement("script");e.src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js";document.body.appendChild(e)}</script>
-
+  
+<script>"use strict";if("loading"in HTMLImageElement.prototype){document.querySelectorAll('img[loading="lazy"]').forEach(e=>{e.src=e.dataset.src;if(e.getAttribute("style")){e.setAttribute("data-temp-style",e.getAttribute("style"))};if(e.getAttribute("data-aspectratio")){e.style.paddingTop=100*e.getAttribute("data-aspectratio")+"%";e.style.height=0;}e.onload=function(){if(e.getAttribute("data-temp-style")){e.setAttribute("style", e.getAttribute("data-temp-style"))}else{e.removeAttribute("style")};e.removeAttribute("data-temp-style")}})}else{const e=document.createElement("script");e.src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js";document.body.appendChild(e)}</script>
 </body>
 </html>
