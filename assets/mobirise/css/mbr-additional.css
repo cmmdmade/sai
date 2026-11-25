@@ -7516,6 +7516,65 @@ img {
 .cid-vA8TDtYH0a .content-wrap {
   min-height: 130px;
 }
+#custom-html-5e {
+  /* ============================================================
+   Neutral3rd - Fast. Good. Cheap.
+   Scoped styles for the #n3-fgc block, written in Mobirise's own
+   conventions: mbr-section, container, the Bootstrap row and column
+   grid, mbr-section-title, mbr-section-subtitle, mbr-fonts-style,
+   btn and form-control.
+   Paste into the site CSS, replacing the old #n3-fgc block, including the
+   rules the old block scoped as #custom-html-5e #n3-fgc.
+   Every rule starts with #n3-fgc, so nothing here can reach the rest
+   of the Mobirise site. The panel compiles through Less, so this file
+   avoids calc() arithmetic on CSS variables; values are written out.
+   ============================================================ */
+  /* One content measure at every breakpoint, on the Mobirise container. */
+  /* The theme's type scale and button spacing are neutralised inside the
+   block so the approved design keeps its own type and rhythm. */
+  /* The site forces square, light buttons inside .mbr-section-btn. */
+}
+#custom-html-5e #n3-fgc {
+  --n3-bg: #202426;
+  --n3-panel: #292e31;
+  --n3-line: #485055;
+  --n3-orange: #c75423;
+  --n3-white: #f8f8f6;
+  --n3-muted: #c3c8ca;
+  background: radial-gradient(ellipse at 85% 4%, rgba(199, 84, 35, 0.17), transparent 38%), repeating-linear-gradient(120deg, transparent 0 80px, rgba(255, 255, 255, 0.018) 81px 82px), var(--n3-bg);
+  color: var(--n3-white);
+  padding: 80px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.55;
+  isolation: isolate;
+}
+#custom-html-5e #n3-fgc * {
+  box-sizing: border-box;
+}
+#custom-html-5e #n3-fgc .container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+#custom-html-5e #n3-fgc .mbr-fonts-style {
+  font-family: inherit;
+}
+#custom-html-5e #n3-fgc .mbr-section-btn {
+  margin: 0;
+  font-size: inherit;
+}
+#custom-html-5e #n3-fgc .btn {
+  margin: 0;
+}
+#custom-html-5e #n3-fgc .mbr-section-btn .btn {
+  border-radius: 5px !important;
+  font-weight: 700 !important;
+}
+#custom-html-5e #n3-fgc .mbr-section-btn .btn:hover,
+#custom-html-5e #n3-fgc .mbr-section-btn .btn:focus {
+  transform: none;
+}
 .cid-vA8TDuKXjP {
   padding-top: 3rem;
   padding-bottom: 3rem;
