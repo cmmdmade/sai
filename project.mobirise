@@ -972,102 +972,162 @@
             },
             "@media (max-width: 992px)": {
               ".container": {
-                "@media (max-width: 992px)": {
-                  "padding": "0 24px"
-                }
+                "padding": "0 24px"
               }
             },
-            ".row": {
-              "justify-content": "center",
-              "border-top": "1px solid @border",
-              "@media (min-width: 992px)": {
-                "margin": "0"
-              },
-              "@media (max-width: 992px)": {
-                "border": "none"
-              },
-              ".item": {
-                "padding": "0 32px 0 0",
-                "border-radius": "0 !important",
-                "@media (max-width: 992px)": {
-                  "padding": "0 16px"
-                }
-              }
-            },
-            ".item-wrapper": {
-              "height": "100%",
-              ".card-box": {
-                "display": "flex",
-                "height": "100%",
-                "@media (max-width: 992px)": {
-                  "display": "block"
-                }
-              }
-            },
-            ".subtitle-wrap": {
-              "display": "flex",
-              "justify-content": "flex-end",
-              "@media (max-width: 992px)": {
-                "display": "block"
-              },
-              ".mbr-section-subtitle": {
-                "padding": "32px",
-                "writing-mode": "tb",
-                "transform": "rotate(180deg)",
-                "margin": "0",
-                "@media (max-width: 992px)": {
-                  "transform": "rotate(0)",
-                  "writing-mode": "horizontal-tb",
-                  "padding": "24px",
-                  "border-left": "1px solid @border",
-                  "text-align": "left"
-                }
-              }
-            },
-            ".content-wrapper": {
-              "padding": "32px",
-              "border-left": "1px solid @border",
-              "@media (max-width: 992px)": {
-                "padding": "24px",
-                "border-top": "1px solid @border",
-                "border-left": "1px solid @border"
-              },
+            ".benefits-heading": {
+              "padding": "0 8px",
+              "margin-bottom": "32px",
               ".mbr-section-title": {
-                "margin-bottom": "16px"
+                "color": "#ffffff",
+                "margin-bottom": "8px",
+                "line-height": "1.2"
               },
               ".mbr-text": {
-                "margin-bottom": "0",
-                "@media (max-width: 992px)": {
-                  "text-align": "left"
-                }
+                "color": "#d7d7d7",
+                "margin-bottom": "0"
+              }
+            },
+            ".benefits-subtitle-row": {
+              "display": "flex",
+              "align-items": "center",
+              "gap": "16px"
+            },
+            ".benefits-heading-line": {
+              "display": "block",
+              "flex": "1",
+              "height": "1px",
+              "background-color": "#c75423",
+              "opacity": "0.75"
+            },
+            ".benefits-grid": {
+              "display": "grid",
+              "grid-template-columns": "repeat(3, minmax(0, 1fr))",
+              "gap": "0"
+            },
+            ".benefits-column": {
+              "padding": "0 32px",
+              "border-right": "1px solid rgba(224, 181, 72, 0.55)",
+              "&:first-child": {
+                "padding-left": "8px"
               },
-              ".mbr-section-btn": {
-                "margin-top": "32px",
-                "@media (max-width: 992px)": {
-                  "text-align": "left",
-                  "margin-top": "24px"
-                }
+              "&:last-child": {
+                "border-right": "none",
+                "padding-right": "8px"
+              }
+            },
+            ".benefit-item": {
+              "display": "grid",
+              "grid-template-columns": "54px minmax(0, 1fr)",
+              "align-items": "start",
+              "gap": "16px",
+              "margin-bottom": "34px",
+              "&:last-child": {
+                "margin-bottom": "0"
+              }
+            },
+            ".benefit-icon": {
+              "color": "#c75423",
+              "text-align": "center",
+              ".mbr-iconfont": {
+                "display": "inline-block",
+                "font-size": "44px",
+                "line-height": "1",
+                "color": "#c75423"
+              }
+            },
+            ".benefit-content": {
+              "min-width": "0"
+            },
+            ".benefit-title": {
+              "color": "#fff",
+              "margin-bottom": "6px",
+              "line-height": "1.25"
+            },
+            ".benefit-description": {
+              "color": "#D2D0C9",
+              "margin-bottom": "0",
+              "line-height": "1.5"
+            },
+            "@media (max-width: 991px)": {
+              ".benefits-grid": {
+                "grid-template-columns": "repeat(2, minmax(0, 1fr))",
+                "row-gap": "32px"
+              },
+              ".benefits-column": {
+                "padding": "0 24px"
+              },
+              ".benefits-column:first-child": {
+                "padding-left": "0"
+              },
+              ".benefits-column:nth-child(2)": {
+                "border-right": "none"
+              },
+              ".benefits-column:last-child": {
+                "padding-left": "0",
+                "border-right": "none"
+              },
+              ".benefit-item": {
+                "margin-bottom": "28px"
+              },
+              ".benefits-heading": {
+                "padding": "0"
+              }
+            },
+            "@media (max-width: 575px)": {
+              ".benefits-heading": {
+                "margin-bottom": "28px"
+              },
+              ".benefits-subtitle-row": {
+                "display": "block"
+              },
+              ".benefits-heading-line": {
+                "width": "100%",
+                "margin-top": "14px"
+              },
+              ".benefits-grid": {
+                "grid-template-columns": "1fr",
+                "gap": "28px"
+              },
+              ".benefits-column, .benefits-column:first-child, .benefits-column:last-child": {
+                "padding": "0",
+                "border-right": "none",
+                "border-bottom": "1px solid rgba(224, 181, 72, 0.35)",
+                "padding-bottom": "24px"
+              },
+              ".benefits-column:last-child": {
+                "border-bottom": "none",
+                "padding-bottom": "0"
+              },
+              ".benefit-item": {
+                "grid-template-columns": "48px minmax(0, 1fr)",
+                "gap": "14px",
+                "margin-bottom": "24px"
+              },
+              ".benefit-icon .mbr-iconfont": {
+                "font-size": "38px"
+              },
+              ".benefit-title": {
+                "margin-bottom": "4px"
               }
             },
             ".mbr-section-title": {
-              "color": "#F9F6E0"
-            },
-            ".mbr-section-subtitle": {
-              "color": "#c75423",
-              "text-align": "center"
+              "color": "#ffffff"
             },
             ".mbr-text": {
-              "color": "#d7d7d7"
+              "color": "#ffffff"
             },
-            ".mbr-section-title, .mbr-section-btn": {
+            "H3": {
               "color": "#ffffff"
             }
           },
-          "_name": "features05",
+          "_name": "features08",
           "_sourceTheme": "fabm5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"features05 fabm5\" group=\"Article\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"12\" step=\"1\" value=\"2\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"12\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <header>Cards</header>\n        <input type=\"checkbox\" title=\"Card Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Card Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Card Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n        <input type=\"color\" title=\"Border Color\" value=\"#72716b\" name=\"border\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpeg\" selected parallax>\n            <input type=\"color\" title=\"Color\" value=\"#474A48\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@THEME_PATH@/components/_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row\">\n            \n            <div class=\"col-12 col-lg-6 item features-without-image item-mb active\">\n                <div class=\"item-wrapper\">\n                    <div class=\"card-box\">\n                        <div class=\"subtitle-wrap\">\n                            <h3 class=\"mbr-section-subtitle mbr-fonts-style\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\"><b>1st Key Principle</b></h3>\n                        </div>\n                        <div class=\"content-wrapper\">\n                            <h2 class=\"mbr-section-title mbr-fonts-style\" data-app-selector=\".mbr-section-title, .mbr-section-btn\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">\n                                <b>People Before Platforms</b></h2>\n                            <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">Technology should fit the people doing the work. I start with your goals, constraints, and workflows, then choose tools that make the work clearer and more effective.</p>\n                            <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n                                <a class=\"btn btn-secondary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">\n                                    <span class=\"mobi-mbri mobi-mbri-right mbr-iconfont mbr-iconfont-btn\"></span>\n                                    READ MORE\n                                </a>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div><div class=\"col-12 col-lg-6 item features-without-image item-mb\">\n                <div class=\"item-wrapper\">\n                    <div class=\"card-box\">\n                        <div class=\"subtitle-wrap\">\n                            <h3 class=\"mbr-section-subtitle mbr-fonts-style\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\">\n                                <b>2nd Key Principle</b>\n                            </h3>\n                        </div>\n                        <div class=\"content-wrapper\">\n                            <h2 class=\"mbr-section-title mbr-fonts-style\" data-app-selector=\".mbr-section-title, .mbr-section-btn\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">\n                                <b>Built For Real Work</b></h2>\n                            <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">\n                                Useful beats impressive. I build and connect practical systems designed for everyday use, with care for reliability, security, and what happens after launch.</p>\n                            <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n                                <a class=\"btn btn-secondary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">\n                                    <span class=\"mobi-mbri mobi-mbri-right mbr-iconfont mbr-iconfont-btn\"></span>\n                                    READ MORE\n                                </a>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_cid": "tPfiw8mInr",
-          "_anchor": "features05-6",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"features08 fabm5 neutral3rd-benefits\" group=\"Features\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"12\" step=\"1\" value=\"3\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"12\" step=\"1\" value=\"3\" condition=\"fullScreen == false\">\n\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n\n        <header>Cards</header>\n        <input type=\"checkbox\" title=\"Card Name\" name=\"showName\">\n        <input type=\"color\" title=\"Name Active Color\" value=\"#8AA29E\" name=\"active\" condition=\"showName\">\n        <input type=\"checkbox\" title=\"Card Subtitle\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Card Text\" name=\"showCardText\">\n        <input type=\"color\" title=\"Card BG\" value=\"#474A48\" name=\"card\">\n        <input type=\"color\" title=\"Border Color\" value=\"#c75423\" name=\"border\">\n\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@THEME_PATH@/components/_images/background1.jpg\" selected parallax>\n            <input type=\"color\" title=\"Color\" value=\"#474A48\">\n        </fieldset>\n\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@THEME_PATH@/components/_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n\n        <div class=\"row\">\n            <div class=\"col-12\">\n\n                <div class=\"benefits-heading\" mbr-if=\"showTitle || showText\">\n\n                    <h2 class=\"mbr-section-title mbr-fonts-style\" mbr-theme-style=\"display-2\" data-app-selector=\".mbr-section-title\" mbr-if=\"showTitle\"><b>Practical Technology. More Room To Do Good Work.</b></h2>\n\n                    <div class=\"benefits-subtitle-row\" mbr-if=\"showText\">\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-text\"><b>Start with a real friction point. Build only what helps.</b></p>\n\n                        <span class=\"benefits-heading-line\"></span>\n                        \n                    </div>\n<p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-text\"></p>\n\n                </div>\n\n            </div>\n        </div>\n\n        <div class=\"row\">\n            <div class=\"col-12\">\n\n                <div class=\"benefits-grid\">\n\n                    <!-- COLUMN 1 -->\n                    <div class=\"benefits-column\">\n\n                        <div class=\"benefit-item\">\n                            <div class=\"benefit-icon\">\n                                <span class=\"mbr-iconfont mobi-mbri-speed mobi-mbri\"></span>\n                            </div>\n                            <div class=\"benefit-content\">\n                                <h3 class=\"benefit-title mbr-fonts-style\" mbr-theme-style=\"display-5\"><b>Simplify the Work</b></h3>\n                                <p class=\"benefit-description mbr-fonts-style\" mbr-theme-style=\"display-7\">\n                                    Reduce repetitive steps and unnecessary handoffs.\n                                </p>\n                            </div>\n                        </div>\n\n                        <div class=\"benefit-item\">\n                            <div class=\"benefit-icon\">\n                                <span class=\"mbr-iconfont mobi-mbri-growing-chart mobi-mbri\"></span>\n                            </div>\n                            <div class=\"benefit-content\">\n                                <h3 class=\"benefit-title mbr-fonts-style\" mbr-theme-style=\"display-5\"><b>See What Matters</b></h3>\n                                <p class=\"benefit-description mbr-fonts-style\" mbr-theme-style=\"display-7\">\n                                    Connect information so decisions are easier to make.\n                                </p>\n                            </div>\n                        </div>\n\n                    </div>\n\n                    <!-- COLUMN 2 -->\n                    <div class=\"benefits-column\">\n\n                        <div class=\"benefit-item\">\n                            <div class=\"benefit-icon\">\n                                <span class=\"mbr-iconfont mobi-mbri-users mobi-mbri\"></span>\n                            </div>\n                            <div class=\"benefit-content\">\n                                <h3 class=\"benefit-title mbr-fonts-style\" mbr-theme-style=\"display-5\"><b>Improve Experiences</b></h3>\n                                <p class=\"benefit-description mbr-fonts-style\" mbr-theme-style=\"display-7\">\n                                    Make useful services clearer for the people who rely on them.\n                                </p>\n                            </div>\n                        </div>\n\n                        <div class=\"benefit-item\">\n                            <div class=\"benefit-icon\">\n                                <span class=\"mbr-iconfont mobi-mbri-target mobi-mbri\"></span>\n                            </div>\n                            <div class=\"benefit-content\">\n                                <h3 class=\"benefit-title mbr-fonts-style\" mbr-theme-style=\"display-5\"><b>Build What Fits</b></h3>\n                                <p class=\"benefit-description mbr-fonts-style\" mbr-theme-style=\"display-7\">\n                                    Shape tools around your actual workflow, not a generic template.\n                                </p>\n                            </div>\n                        </div>\n\n                    </div>\n\n                    <!-- COLUMN 3 -->\n                    <div class=\"benefits-column\">\n\n                        <div class=\"benefit-item\">\n                            <div class=\"benefit-icon\">\n                                <span class=\"mbr-iconfont mobi-mbri-setting mobi-mbri\"></span>\n                            </div>\n                            <div class=\"benefit-content\">\n                                <h3 class=\"benefit-title mbr-fonts-style\" mbr-theme-style=\"display-5\"><b>Bring Systems Together</b></h3>\n                                <p class=\"benefit-description mbr-fonts-style\" mbr-theme-style=\"display-7\">\n                                    Help the tools and information you already use work better together.\n                                </p>\n                            </div>\n                        </div>\n\n                        <div class=\"benefit-item\">\n                            <div class=\"benefit-icon\">\n                                <span class=\"mbr-iconfont mobi-mbri-lock mobi-mbri\"></span>\n                            </div>\n                            <div class=\"benefit-content\">\n                                <h3 class=\"benefit-title mbr-fonts-style\" mbr-theme-style=\"display-5\"><b>Keep Moving</b></h3>\n                                <p class=\"benefit-description mbr-fonts-style\" mbr-theme-style=\"display-7\">\n                                    Create a foundation that can adapt as your needs change.</p>\n                            </div>\n                        </div>\n\n                    </div>\n\n                </div>\n\n            </div>\n        </div>\n\n    </div>\n</section>",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [],
+          "_anchor": "features08-o",
+          "_cid": "vyqf49IxUR",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
@@ -1381,162 +1441,102 @@
             },
             "@media (max-width: 992px)": {
               ".container": {
-                "padding": "0 24px"
+                "@media (max-width: 992px)": {
+                  "padding": "0 24px"
+                }
               }
             },
-            ".benefits-heading": {
-              "padding": "0 8px",
-              "margin-bottom": "32px",
-              ".mbr-section-title": {
-                "color": "#ffffff",
-                "margin-bottom": "8px",
-                "line-height": "1.2"
+            ".row": {
+              "justify-content": "center",
+              "border-top": "1px solid @border",
+              "@media (min-width: 992px)": {
+                "margin": "0"
               },
-              ".mbr-text": {
-                "color": "#d7d7d7",
-                "margin-bottom": "0"
+              "@media (max-width: 992px)": {
+                "border": "none"
+              },
+              ".item": {
+                "padding": "0 32px 0 0",
+                "border-radius": "0 !important",
+                "@media (max-width: 992px)": {
+                  "padding": "0 16px"
+                }
               }
             },
-            ".benefits-subtitle-row": {
+            ".item-wrapper": {
+              "height": "100%",
+              ".card-box": {
+                "display": "flex",
+                "height": "100%",
+                "@media (max-width: 992px)": {
+                  "display": "block"
+                }
+              }
+            },
+            ".subtitle-wrap": {
               "display": "flex",
-              "align-items": "center",
-              "gap": "16px"
-            },
-            ".benefits-heading-line": {
-              "display": "block",
-              "flex": "1",
-              "height": "1px",
-              "background-color": "#c75423",
-              "opacity": "0.75"
-            },
-            ".benefits-grid": {
-              "display": "grid",
-              "grid-template-columns": "repeat(3, minmax(0, 1fr))",
-              "gap": "0"
-            },
-            ".benefits-column": {
-              "padding": "0 32px",
-              "border-right": "1px solid rgba(224, 181, 72, 0.55)",
-              "&:first-child": {
-                "padding-left": "8px"
-              },
-              "&:last-child": {
-                "border-right": "none",
-                "padding-right": "8px"
-              }
-            },
-            ".benefit-item": {
-              "display": "grid",
-              "grid-template-columns": "54px minmax(0, 1fr)",
-              "align-items": "start",
-              "gap": "16px",
-              "margin-bottom": "34px",
-              "&:last-child": {
-                "margin-bottom": "0"
-              }
-            },
-            ".benefit-icon": {
-              "color": "#c75423",
-              "text-align": "center",
-              ".mbr-iconfont": {
-                "display": "inline-block",
-                "font-size": "44px",
-                "line-height": "1",
-                "color": "#c75423"
-              }
-            },
-            ".benefit-content": {
-              "min-width": "0"
-            },
-            ".benefit-title": {
-              "color": "#fff",
-              "margin-bottom": "6px",
-              "line-height": "1.25"
-            },
-            ".benefit-description": {
-              "color": "#D2D0C9",
-              "margin-bottom": "0",
-              "line-height": "1.5"
-            },
-            "@media (max-width: 991px)": {
-              ".benefits-grid": {
-                "grid-template-columns": "repeat(2, minmax(0, 1fr))",
-                "row-gap": "32px"
-              },
-              ".benefits-column": {
-                "padding": "0 24px"
-              },
-              ".benefits-column:first-child": {
-                "padding-left": "0"
-              },
-              ".benefits-column:nth-child(2)": {
-                "border-right": "none"
-              },
-              ".benefits-column:last-child": {
-                "padding-left": "0",
-                "border-right": "none"
-              },
-              ".benefit-item": {
-                "margin-bottom": "28px"
-              },
-              ".benefits-heading": {
-                "padding": "0"
-              }
-            },
-            "@media (max-width: 575px)": {
-              ".benefits-heading": {
-                "margin-bottom": "28px"
-              },
-              ".benefits-subtitle-row": {
+              "justify-content": "flex-end",
+              "@media (max-width: 992px)": {
                 "display": "block"
               },
-              ".benefits-heading-line": {
-                "width": "100%",
-                "margin-top": "14px"
+              ".mbr-section-subtitle": {
+                "padding": "32px",
+                "writing-mode": "tb",
+                "transform": "rotate(180deg)",
+                "margin": "0",
+                "@media (max-width: 992px)": {
+                  "transform": "rotate(0)",
+                  "writing-mode": "horizontal-tb",
+                  "padding": "24px",
+                  "border-left": "1px solid @border",
+                  "text-align": "left"
+                }
+              }
+            },
+            ".content-wrapper": {
+              "padding": "32px",
+              "border-left": "1px solid @border",
+              "@media (max-width: 992px)": {
+                "padding": "24px",
+                "border-top": "1px solid @border",
+                "border-left": "1px solid @border"
               },
-              ".benefits-grid": {
-                "grid-template-columns": "1fr",
-                "gap": "28px"
+              ".mbr-section-title": {
+                "margin-bottom": "16px"
               },
-              ".benefits-column, .benefits-column:first-child, .benefits-column:last-child": {
-                "padding": "0",
-                "border-right": "none",
-                "border-bottom": "1px solid rgba(224, 181, 72, 0.35)",
-                "padding-bottom": "24px"
+              ".mbr-text": {
+                "margin-bottom": "0",
+                "@media (max-width: 992px)": {
+                  "text-align": "left"
+                }
               },
-              ".benefits-column:last-child": {
-                "border-bottom": "none",
-                "padding-bottom": "0"
-              },
-              ".benefit-item": {
-                "grid-template-columns": "48px minmax(0, 1fr)",
-                "gap": "14px",
-                "margin-bottom": "24px"
-              },
-              ".benefit-icon .mbr-iconfont": {
-                "font-size": "38px"
-              },
-              ".benefit-title": {
-                "margin-bottom": "4px"
+              ".mbr-section-btn": {
+                "margin-top": "32px",
+                "@media (max-width: 992px)": {
+                  "text-align": "left",
+                  "margin-top": "24px"
+                }
               }
             },
             ".mbr-section-title": {
-              "color": "#ffffff"
+              "color": "#F9F6E0"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#c75423",
+              "text-align": "center"
             },
             ".mbr-text": {
-              "color": "#ffffff"
+              "color": "#d7d7d7"
             },
-            "H3": {
+            ".mbr-section-title, .mbr-section-btn": {
               "color": "#ffffff"
             }
           },
-          "_name": "features08",
+          "_name": "features05",
           "_sourceTheme": "fabm5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"features08 fabm5 neutral3rd-benefits\" group=\"Features\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"12\" step=\"1\" value=\"3\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"12\" step=\"1\" value=\"3\" condition=\"fullScreen == false\">\n\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n\n        <header>Cards</header>\n        <input type=\"checkbox\" title=\"Card Name\" name=\"showName\">\n        <input type=\"color\" title=\"Name Active Color\" value=\"#8AA29E\" name=\"active\" condition=\"showName\">\n        <input type=\"checkbox\" title=\"Card Subtitle\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Card Text\" name=\"showCardText\">\n        <input type=\"color\" title=\"Card BG\" value=\"#474A48\" name=\"card\">\n        <input type=\"color\" title=\"Border Color\" value=\"#c75423\" name=\"border\">\n\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@THEME_PATH@/components/_images/background1.jpg\" selected parallax>\n            <input type=\"color\" title=\"Color\" value=\"#474A48\">\n        </fieldset>\n\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@THEME_PATH@/components/_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n\n        <div class=\"row\">\n            <div class=\"col-12\">\n\n                <div class=\"benefits-heading\" mbr-if=\"showTitle || showText\">\n\n                    <h2 class=\"mbr-section-title mbr-fonts-style\" mbr-theme-style=\"display-2\" data-app-selector=\".mbr-section-title\" mbr-if=\"showTitle\"><b>Practical Technology. More Room To Do Good Work.</b></h2>\n\n                    <div class=\"benefits-subtitle-row\" mbr-if=\"showText\">\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-text\"><b>Start with a real friction point. Build only what helps.</b></p>\n\n                        <span class=\"benefits-heading-line\"></span>\n                        \n                    </div>\n<p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-text\"></p>\n\n                </div>\n\n            </div>\n        </div>\n\n        <div class=\"row\">\n            <div class=\"col-12\">\n\n                <div class=\"benefits-grid\">\n\n                    <!-- COLUMN 1 -->\n                    <div class=\"benefits-column\">\n\n                        <div class=\"benefit-item\">\n                            <div class=\"benefit-icon\">\n                                <span class=\"mbr-iconfont mobi-mbri-speed mobi-mbri\"></span>\n                            </div>\n                            <div class=\"benefit-content\">\n                                <h3 class=\"benefit-title mbr-fonts-style\" mbr-theme-style=\"display-5\"><b>Simplify the Work</b></h3>\n                                <p class=\"benefit-description mbr-fonts-style\" mbr-theme-style=\"display-7\">\n                                    Reduce repetitive steps and unnecessary handoffs.\n                                </p>\n                            </div>\n                        </div>\n\n                        <div class=\"benefit-item\">\n                            <div class=\"benefit-icon\">\n                                <span class=\"mbr-iconfont mobi-mbri-growing-chart mobi-mbri\"></span>\n                            </div>\n                            <div class=\"benefit-content\">\n                                <h3 class=\"benefit-title mbr-fonts-style\" mbr-theme-style=\"display-5\"><b>See What Matters</b></h3>\n                                <p class=\"benefit-description mbr-fonts-style\" mbr-theme-style=\"display-7\">\n                                    Connect information so decisions are easier to make.\n                                </p>\n                            </div>\n                        </div>\n\n                    </div>\n\n                    <!-- COLUMN 2 -->\n                    <div class=\"benefits-column\">\n\n                        <div class=\"benefit-item\">\n                            <div class=\"benefit-icon\">\n                                <span class=\"mbr-iconfont mobi-mbri-users mobi-mbri\"></span>\n                            </div>\n                            <div class=\"benefit-content\">\n                                <h3 class=\"benefit-title mbr-fonts-style\" mbr-theme-style=\"display-5\"><b>Improve Experiences</b></h3>\n                                <p class=\"benefit-description mbr-fonts-style\" mbr-theme-style=\"display-7\">\n                                    Make useful services clearer for the people who rely on them.\n                                </p>\n                            </div>\n                        </div>\n\n                        <div class=\"benefit-item\">\n                            <div class=\"benefit-icon\">\n                                <span class=\"mbr-iconfont mobi-mbri-target mobi-mbri\"></span>\n                            </div>\n                            <div class=\"benefit-content\">\n                                <h3 class=\"benefit-title mbr-fonts-style\" mbr-theme-style=\"display-5\"><b>Build What Fits</b></h3>\n                                <p class=\"benefit-description mbr-fonts-style\" mbr-theme-style=\"display-7\">\n                                    Shape tools around your actual workflow, not a generic template.\n                                </p>\n                            </div>\n                        </div>\n\n                    </div>\n\n                    <!-- COLUMN 3 -->\n                    <div class=\"benefits-column\">\n\n                        <div class=\"benefit-item\">\n                            <div class=\"benefit-icon\">\n                                <span class=\"mbr-iconfont mobi-mbri-setting mobi-mbri\"></span>\n                            </div>\n                            <div class=\"benefit-content\">\n                                <h3 class=\"benefit-title mbr-fonts-style\" mbr-theme-style=\"display-5\"><b>Bring Systems Together</b></h3>\n                                <p class=\"benefit-description mbr-fonts-style\" mbr-theme-style=\"display-7\">\n                                    Help the tools and information you already use work better together.\n                                </p>\n                            </div>\n                        </div>\n\n                        <div class=\"benefit-item\">\n                            <div class=\"benefit-icon\">\n                                <span class=\"mbr-iconfont mobi-mbri-lock mobi-mbri\"></span>\n                            </div>\n                            <div class=\"benefit-content\">\n                                <h3 class=\"benefit-title mbr-fonts-style\" mbr-theme-style=\"display-5\"><b>Keep Moving</b></h3>\n                                <p class=\"benefit-description mbr-fonts-style\" mbr-theme-style=\"display-7\">\n                                    Create a foundation that can adapt as your needs change.</p>\n                            </div>\n                        </div>\n\n                    </div>\n\n                </div>\n\n            </div>\n        </div>\n\n    </div>\n</section>",
-          "_PHPplaceholders": [],
-          "_JSplaceholders": [],
-          "_anchor": "features08-o",
-          "_cid": "vyqf49IxUR",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"features05 fabm5\" group=\"Article\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"12\" step=\"1\" value=\"2\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"12\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <header>Cards</header>\n        <input type=\"checkbox\" title=\"Card Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Card Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Card Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n        <input type=\"color\" title=\"Border Color\" value=\"#72716b\" name=\"border\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpeg\" selected parallax>\n            <input type=\"color\" title=\"Color\" value=\"#474A48\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@THEME_PATH@/components/_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row\">\n            \n            <div class=\"col-12 col-lg-6 item features-without-image item-mb active\">\n                <div class=\"item-wrapper\">\n                    <div class=\"card-box\">\n                        <div class=\"subtitle-wrap\">\n                            <h3 class=\"mbr-section-subtitle mbr-fonts-style\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\"><b>1st Key Principle</b></h3>\n                        </div>\n                        <div class=\"content-wrapper\">\n                            <h2 class=\"mbr-section-title mbr-fonts-style\" data-app-selector=\".mbr-section-title, .mbr-section-btn\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">\n                                <b>People Before Platforms</b></h2>\n                            <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">Technology should fit the people doing the work. I start with your goals, constraints, and workflows, then choose tools that make the work clearer and more effective.</p>\n                            <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n                                <a class=\"btn btn-secondary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">\n                                    <span class=\"mobi-mbri mobi-mbri-right mbr-iconfont mbr-iconfont-btn\"></span>\n                                    READ MORE\n                                </a>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div><div class=\"col-12 col-lg-6 item features-without-image item-mb\">\n                <div class=\"item-wrapper\">\n                    <div class=\"card-box\">\n                        <div class=\"subtitle-wrap\">\n                            <h3 class=\"mbr-section-subtitle mbr-fonts-style\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\">\n                                <b>2nd Key Principle</b>\n                            </h3>\n                        </div>\n                        <div class=\"content-wrapper\">\n                            <h2 class=\"mbr-section-title mbr-fonts-style\" data-app-selector=\".mbr-section-title, .mbr-section-btn\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">\n                                <b>Built For Real Work</b></h2>\n                            <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">\n                                Useful beats impressive. I build and connect practical systems designed for everyday use, with care for reliability, security, and what happens after launch.</p>\n                            <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n                                <a class=\"btn btn-secondary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">\n                                    <span class=\"mobi-mbri mobi-mbri-right mbr-iconfont mbr-iconfont-btn\"></span>\n                                    READ MORE\n                                </a>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "tPfiw8mInr",
+          "_anchor": "features05-6",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
